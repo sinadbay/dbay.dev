@@ -1,0 +1,11 @@
+*.iml
+.gradle
+.idea
+build
+out
+.jdk/
+*.jar
+.gradletasknamecache
+*.env.dev
+*.DS_STORE
+.DS_STORE
