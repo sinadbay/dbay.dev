@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+*.iml
+.gradle
+.idea
+build
+out
+.jdk/
+*.jar
+.gradletasknamecache
+*.env.dev
+*.DS_STORE
+.DS_STORE
