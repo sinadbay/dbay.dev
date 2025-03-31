@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sina Dibay | dbay.dev</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      padding: 40px 20px;
+      background: #111;
+      color: #fff;
+      text-align: center;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    h2 i {
+      margin-right: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #555;
+      border-radius: 4px;
+      background: #111;
+      color: #fff;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #fff;
+      color: #000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sina Dibay</h1>
+    <p>Welcome to dbay.dev — Musician & Software Engineer</p>
+  </header>
+
+  <nav>
+    <a href="#bio">Bio</a>
+    <a href="#music">Music</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="bio">
+      <h2><i class="fas fa-laptop-code"></i> About Me</h2>
+      <p>Welcome! I'm Sina Dibay — a software engineer and mentor by day, and a part-time percussionist by night. My days are filled with code, collaboration, and guiding others in their tech journey, while my evenings are devoted to rhythm, performance, and musical expression. I'm based in the San Francisco Bay Area and always open to creative projects, partnerships, and conversations. Feel free to reach out if you're interested in collaborating — whether it's on music, mentorship, or engineering ideas!</p>
+      <ul>
+        <li><a href="https://github.com/moedibay" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/moe-dibay-0a7a4536/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="https://www.instagram.com/sinadbay/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+      </ul>
+    </section>
+
+    <section id="music">
+      <h2><i class="fas fa-music"></i> Music & Performances</h2>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=F6GNfrOmuME&themeRefresh=1" target="_blank">Kabuki (Ez Kevokim, کابوکی) @Persian Festival (Portland, OR - 2019)</a></li>
+        <li><a href="https://www.youtube.com/watch?v=5sGx8OvdvWY&themeRefresh=1" target="_blank">Khanoomi @Persian Festival (Portland, OR - 2019)</a></li>
+        <li><a href="https://www.youtube.com/watch?v=7qgqmNU_grE" target="_blank">Portland, OR - Winter 2018</a></li>
+        <li><a href="https://www.youtube.com/watch?v=HzLHhawVIgo" target="_blank">Sari Galin @Seattle Folk Music Festival (Seattle, WA - 2016)</a></li>
+        <li><a href="https://on.soundcloud.com/nYGpLybYvUtznUHW7" target="_blank">SoundCloud</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sina Dibay | dbay.dev</p>
+  </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      document.getElementById('form-response').innerText = `Thank you, ${name}. Your message has been sent!`;
+      document.getElementById('contact-form').reset();
+    });
+  </script>
+</body>
+</html>
+
