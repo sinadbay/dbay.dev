@@ -1,168 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sina Dibay | dbay.dev</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-
-    header {
-      padding: 40px 20px;
-      background: #111;
-      color: #fff;
-      text-align: center;
-    }
-
-    nav {
-      background: #222;
-      display: flex;
-      justify-content: center;
-      padding: 15px 0;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 25px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 60px;
-    }
-
-    h2 {
-      border-bottom: 2px solid #444;
-      padding-bottom: 10px;
-      display: flex;
-      align-items: center;
-    }
-
-    h2 i {
-      margin-right: 10px;
-    }
-
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: #fff;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #555;
-      border-radius: 4px;
-      background: #111;
-      color: #fff;
-    }
-
-    form button {
-      padding: 10px 20px;
-      background: #fff;
-      color: #000;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    form button:hover {
-      background: #ccc;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      color: #fff;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sina Dibay - Software Engineer & Artist</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sina Dibay - Software Engineer and Artist based in San Francisco Bay Area. Creator of Splitzy app and Persian percussionist.">
+    <meta name="keywords" content="Sina Dibay, Software Engineer, iOS Developer, Persian Music, Percussion, Splitzy, San Francisco">
+    <meta name="author" content="Sina Dibay">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dbay.dev/">
+    <meta property="og:title" content="Sina Dibay - Software Engineer & Artist">
+    <meta property="og:description" content="Software Engineer and Artist based in San Francisco Bay Area. Creator of Splitzy app and Persian percussionist.">
+    <meta property="og:image" content="https://dbay.dev/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dbay.dev/">
+    <meta property="twitter:title" content="Sina Dibay - Software Engineer & Artist">
+    <meta property="twitter:description" content="Software Engineer and Artist based in San Francisco Bay Area. Creator of Splitzy app and Persian percussionist.">
+    <meta property="twitter:image" content="https://dbay.dev/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Sina Dibay</h1>
-    <p>Welcome to dbay.dev — Musician & Software Engineer</p>
-  </header>
+    <!-- Interactive Background -->
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
 
-  <nav>
-    <a href="#bio">Bio</a>
-    <a href="#music">Music</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Sina Dibay</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#apps" class="nav-link">Apps</a></li>
+                <li><a href="#music" class="nav-link">Music</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <main>
-    <section id="bio">
-      <h2><i class="fas fa-laptop-code"></i> About Me</h2>
-      <p>Welcome! I'm Sina Dibay — a software engineer and mentor by day, and a part-time percussionist by night. My days are filled with code, collaboration, and guiding others in their tech journey, while my evenings are devoted to rhythm, performance, and musical expression. I'm based in the San Francisco Bay Area and always open to creative projects, partnerships, and conversations. Feel free to reach out if you're interested in collaborating — whether it's on music, mentorship, or engineering ideas!</p>
-      <ul>
-        <li><a href="https://github.com/sinadbay" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/sina-dibay-0a7a4536/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/sinadbay/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
-      </ul>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Sina Dibay</span>
+                </h1>
+                <p class="hero-subtitle">Software Engineer & Artist</p>
+                <p class="hero-description">
+                    Software Engineer by day, creating music by night. 
+                    Based in the San Francisco Bay Area.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Learn More</a>
+                    <a href="#music" class="btn btn-secondary">Listen to Music</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-animation">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                            <span class="terminal-dot"></span>
+                        </div>
+                        <div class="terminal-content">
+                            <span class="typing-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
 
-    <section id="music">
-      <h2><i class="fas fa-music"></i> Music & Performances</h2>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=F6GNfrOmuME&themeRefresh=1" target="_blank">Kabuki (Ez Kevokim, کابوکی) @Persian Festival (Portland, OR - 2019)</a></li>
-        <li><a href="https://www.youtube.com/watch?v=5sGx8OvdvWY&themeRefresh=1" target="_blank">Khanoomi @Persian Festival (Portland, OR - 2019)</a></li>
-        <li><a href="https://www.youtube.com/watch?v=7qgqmNU_grE" target="_blank">Portland, OR - Winter 2018</a></li>
-        <li><a href="https://www.youtube.com/watch?v=HzLHhawVIgo" target="_blank">Sari Galin @Seattle Folk Music Festival (Seattle, WA - 2016)</a></li>
-        <li><a href="https://on.soundcloud.com/nYGpLybYvUtznUHW7" target="_blank">SoundCloud</a></li>
-      </ul>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Welcome! I'm Sina Dibay — a software engineer and <a href="https://mentorcruise.com/mentor/moedibay/" target="_blank" class="bio-link">mentor by day</a>, and a part-time percussionist by night. 
+                        My days are filled with code, collaboration, and guiding others in their tech journey, while my evenings 
+                        are devoted to rhythm, performance, and musical expression.
+                    </p>
+                    <p class="about-description">
+                        I'm based in the San Francisco Bay Area and always open to creative projects, partnerships, and conversations. 
+                        Feel free to reach out if you're interested in collaborating — whether it's on music, mentorship, or engineering ideas!
+                    </p>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="profile.png" alt="Sina Dibay" class="profile-photo">
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/sinadbay" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sina-dibay-0a7a4536/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/sinadbay/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-      <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p id="form-response"></p>
+    <!-- Apps Section -->
+    <section id="apps" class="apps">
+        <div class="container">
+            <h2 class="section-title">Apps</h2>
+            <div class="apps-grid">
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="app-content">
+                        <h3 class="app-title">Splitzy - Fair Cost</h3>
+                        <p class="app-description">
+                            Splitzy makes sharing trip costs simple and fair. Add friends, track expenses, and settle up with minimal hassle — so you can enjoy the journey!
+                        </p>
+                        <p class="app-features">
+                            Splitzy makes it easy to share trip expenses with friends. Create a trip, add members, record expenses, and see who owes whom. The app calculates fair balances and reduces the number of payments needed so everyone can settle up quickly. This app allows you to create, share and export your expenses in PDF with your friend by end of your trip.
+                        </p>
+                        <div class="app-badges">
+                            <span class="app-badge">iOS</span>
+                            <span class="app-badge">iPadOS</span>
+                            <span class="app-badge">macOS</span>
+                        </div>
+                        <a href="https://apps.apple.com/gb/app/splitzy-fair-cost/id6751311705" target="_blank" class="app-download">
+                            <i class="fab fa-apple"></i>
+                            Download on App Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Sina Dibay | dbay.dev</p>
-  </footer>
+    <!-- Music Section -->
+    <section id="music" class="music">
+        <div class="container">
+            <h2 class="section-title">Music & Performances</h2>
+            <div class="music-content">
+                <div class="music-intro">
+                    <p>When I'm not coding, you'll find me creating music and performing. Here's a glimpse into my musical journey:</p>
+                </div>
+                
+                <div class="music-grid">
+                    <div class="music-card spotify-card">
+                        <div class="music-card-header">
+                            <i class="fab fa-spotify"></i>
+                            <h3>Spotify Artist</h3>
+                        </div>
+                        <div class="spotify-preview">
+                            <div class="album-art">
+                                <i class="fas fa-music"></i>
+                            </div>
+                            <div class="track-info">
+                                <h4>Latest Releases</h4>
+                                <p>Raha (2025) • Davvar (2024)</p>
+                                <p class="listeners">5 monthly listeners</p>
+                            </div>
+                        </div>
+                        <a href="https://open.spotify.com/artist/7CplpaCcPlIAkY5xuWaIBC" target="_blank" class="music-link">
+                            Listen on Spotify
+                        </a>
+                    </div>
 
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-      document.getElementById('form-response').innerText = `Thank you, ${name}. Your message has been sent!`;
-      document.getElementById('contact-form').reset();
-    });
-  </script>
+                    <div class="music-card performances-card">
+                        <div class="music-card-header">
+                            <i class="fas fa-microphone"></i>
+                            <h3>Live Performances</h3>
+                        </div>
+                        <div class="performances-list">
+                            <a href="https://www.youtube.com/watch?v=F6GNfrOmuME&themeRefresh=1" target="_blank" class="performance-item">
+                                <span class="performance-title">Kabuki (Ez Kevokim, کابوکی)</span>
+                                <span class="performance-venue">Persian Festival (Portland, OR - 2019)</span>
+                                <i class="fab fa-youtube performance-icon"></i>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=5sGx8OvdvWY" target="_blank" class="performance-item">
+                                <span class="performance-title">Khanoomi</span>
+                                <span class="performance-venue">Persian Festival (Portland, OR - 2019)</span>
+                                <i class="fab fa-youtube performance-icon"></i>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=7qgqmNU_grE" target="_blank" class="performance-item">
+                                <span class="performance-title">Portland, OR</span>
+                                <span class="performance-venue">Winter 2018</span>
+                                <i class="fab fa-youtube performance-icon"></i>
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=HzLHhawVIgo" target="_blank" class="performance-item">
+                                <span class="performance-title">Sari Galin</span>
+                                <span class="performance-venue">Seattle Folk Music Festival (Seattle, WA - 2016)</span>
+                                <i class="fab fa-youtube performance-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>I'm always open to creative projects, partnerships, and conversations. Whether it's about music, mentorship, or engineering ideas, feel free to reach out!</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sina Dibay | dbay.dev</p>
+                <div class="footer-links">
+                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("FCPXfOVI5wQZ_my3G");
+        })();
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
-
