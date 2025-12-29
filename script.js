@@ -1,12 +1,108 @@
-// Typing Animation for Terminal
+// ============================================
+// MODERN PORTFOLIO - DBAY.DEV
+// Enhanced animations and interactions
+// ============================================
+
+// Wait for DOM to be ready
+document.addEventListener('DOMContentLoaded', () => {
+    initLoader();
+    initNavigation();
+    initTypingAnimation();
+    initScrollAnimations();
+    initParallax();
+    initMagneticButtons();
+    initSmoothScroll();
+    initContactForm();
+});
+
+// ============================================
+// LOADING ANIMATION
+// ============================================
+function initLoader() {
+    window.addEventListener('load', () => {
+        // Small delay for smoother transition
+        setTimeout(() => {
+            document.body.classList.add('loaded');
+        }, 300);
+    });
+}
+
+// ============================================
+// NAVIGATION
+// ============================================
+function initNavigation() {
+    const navbar = document.querySelector('.navbar');
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Scroll handler for navbar
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        // Add/remove scrolled class
+        if (currentScroll > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    }, { passive: true });
+
+    // Mobile menu toggle
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close menu on link click
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+
+    // Active link highlighting
+    const sections = document.querySelectorAll('section[id]');
+    
+    window.addEventListener('scroll', () => {
+        const scrollY = window.pageYOffset;
+        
+        sections.forEach(section => {
+            const sectionHeight = section.offsetHeight;
+            const sectionTop = section.offsetTop - 100;
+            const sectionId = section.getAttribute('id');
+            const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+            
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                navLink?.classList.add('active');
+            } else {
+                navLink?.classList.remove('active');
+            }
+        });
+    }, { passive: true });
+}
+
+// ============================================
+// TYPING ANIMATION
+// ============================================
+function initTypingAnimation() {
 const typingText = document.querySelector('.typing-text');
+    if (!typingText) return;
+
 const codeLines = [
     'const sina = {',
-    '  profession: "Software Engineer @Meta",',
-    '  passion: "Music,  Percussion, Mentorship, Traveling",',
+        '  role: "Software Engineer @Meta",',
+        '  passion: "Music, Percussion, Mentorship",',
     '  location: "San Francisco Bay Area",',
-    '  music: ["Persian Folk", "Percussion", "Spotify Artist"],',
-    '  apps: ["Splitzy - Fair Cost"],',
+        '  music: ["Persian Folk", "Percussion"],',
+        '  apps: ["Splitzy", "Baziihub"],',
     '  motto: "Code by day, music by night"',
     '};',
     '',
@@ -17,105 +113,241 @@ const codeLines = [
 let lineIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
+    let currentText = '';
 
-function typeWriter() {
+    function type() {
     const currentLine = codeLines[lineIndex];
     
     if (isDeleting) {
-        typingText.textContent = currentLine.substring(0, charIndex - 1);
+            currentText = currentLine.substring(0, charIndex - 1);
         charIndex--;
     } else {
-        typingText.textContent = currentLine.substring(0, charIndex + 1);
+            currentText = currentLine.substring(0, charIndex + 1);
         charIndex++;
     }
     
-    let typeSpeed = isDeleting ? 50 : 100;
+        typingText.textContent = currentText;
+        
+        let typeSpeed = isDeleting ? 30 : 80;
     
     if (!isDeleting && charIndex === currentLine.length) {
-        typeSpeed = 2000; // Pause at end of line
+            typeSpeed = 2000;
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         lineIndex = (lineIndex + 1) % codeLines.length;
-        typeSpeed = 500; // Pause before next line
+            typeSpeed = 400;
+        }
+        
+        setTimeout(type, typeSpeed);
     }
-    
-    setTimeout(typeWriter, typeSpeed);
+
+    // Start after a short delay
+    setTimeout(type, 1500);
 }
 
-// Start typing animation when page loads
-window.addEventListener('load', () => {
-    setTimeout(typeWriter, 1000);
-});
+// ============================================
+// SCROLL REVEAL ANIMATIONS
+// ============================================
+function initScrollAnimations() {
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .stagger-children');
+    
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -80px 0px'
+    };
 
-// Mobile Navigation Toggle
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                
+                // Optional: unobserve after animation
+                // revealObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
-
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
     });
-});
 
-// Smooth Scrolling for Navigation Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+    // Counter animation for numbers (if any)
+    const counters = document.querySelectorAll('.counter');
+    
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const end = parseInt(target.dataset.count);
+                animateCounter(target, 0, end, 2000);
+                counterObserver.unobserve(target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+}
+
+function animateCounter(element, start, end, duration) {
+    const range = end - start;
+    const startTime = performance.now();
+    
+    function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeProgress = 1 - Math.pow(1 - progress, 3);
+        const current = Math.floor(start + range * easeProgress);
+        
+        element.textContent = current;
+        
+        if (progress < 1) {
+            requestAnimationFrame(update);
         }
-    });
-});
-
-// Navbar Background on Scroll
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
-    } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
     }
-});
+    
+    requestAnimationFrame(update);
+}
 
-// Intersection Observer for Animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+// ============================================
+// PARALLAX EFFECTS
+// ============================================
+function initParallax() {
+    const shapes = document.querySelectorAll('.shape');
+    let ticking = false;
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                const scrolled = window.pageYOffset;
+                
+                shapes.forEach((shape, index) => {
+                    const speed = 0.03 + (index * 0.02);
+                    const yPos = scrolled * speed;
+                    shape.style.transform = `translateY(${yPos}px)`;
+                });
+                
+                ticking = false;
+            });
+            ticking = true;
         }
+    }, { passive: true });
+
+    // Mouse parallax for hero section
+    const hero = document.querySelector('.hero');
+    const terminal = document.querySelector('.terminal');
+    
+    if (hero && terminal) {
+        hero.addEventListener('mousemove', (e) => {
+            const rect = hero.getBoundingClientRect();
+            const x = (e.clientX - rect.left - rect.width / 2) / rect.width;
+            const y = (e.clientY - rect.top - rect.height / 2) / rect.height;
+            
+            terminal.style.transform = `
+                perspective(1000px) 
+                rotateY(${x * 5}deg) 
+                rotateX(${-y * 5}deg)
+            `;
+        });
+
+        hero.addEventListener('mouseleave', () => {
+            terminal.style.transform = 'perspective(1000px) rotateY(-5deg) rotateX(5deg)';
+        });
+    }
+}
+
+// ============================================
+// MAGNETIC BUTTON EFFECT
+// ============================================
+function initMagneticButtons() {
+    const buttons = document.querySelectorAll('.btn, .app-download, .music-link, .social-link');
+    
+    buttons.forEach(button => {
+        button.addEventListener('mousemove', (e) => {
+            const rect = button.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            button.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+        });
+
+        button.addEventListener('mouseleave', () => {
+            button.style.transform = '';
+        });
+
+        // Ripple effect on click
+        button.addEventListener('click', function(e) {
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+            
+            ripple.style.cssText = `
+                position: absolute;
+                width: ${size}px;
+                height: ${size}px;
+                left: ${x}px;
+                top: ${y}px;
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 50%;
+                transform: scale(0);
+                animation: ripple 0.6s ease-out;
+                pointer-events: none;
+            `;
+            
+            this.style.position = 'relative';
+            this.style.overflow = 'hidden';
+            this.appendChild(ripple);
+            
+            setTimeout(() => ripple.remove(), 600);
+        });
     });
-}, observerOptions);
 
-// Observe all sections for animation
-document.querySelectorAll('section').forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(30px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(section);
-});
+    // Add ripple animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+}
 
-// Contact Form Handling
+// ============================================
+// SMOOTH SCROLLING
+// ============================================
+function initSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            
+            if (target) {
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+// ============================================
+// CONTACT FORM
+// ============================================
+function initContactForm() {
 const contactForm = document.getElementById('contactForm');
+    if (!contactForm) return;
 
-contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', async function(e) {
     e.preventDefault();
     
     const formData = new FormData(this);
@@ -123,7 +355,7 @@ contactForm.addEventListener('submit', function(e) {
     const email = formData.get('email');
     const message = formData.get('message');
     
-    // Simple validation
+        // Validation
     if (!name || !email || !message) {
         showNotification('Please fill in all fields', 'error');
         return;
@@ -134,13 +366,11 @@ contactForm.addEventListener('submit', function(e) {
         return;
     }
     
-    // Update button state
     const submitButton = this.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
     
-    // EmailJS parameters
     const templateParams = {
         from_name: name,
         from_email: email,
@@ -148,219 +378,141 @@ contactForm.addEventListener('submit', function(e) {
         to_name: 'Sina Dibay'
     };
     
-    // Send email using EmailJS
-    emailjs.send('service_u7jtcwu', 'template_wvwz5wi', templateParams)
-        .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
+        try {
+            await emailjs.send('service_u7jtcwu', 'template_wvwz5wi', templateParams);
             showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
             contactForm.reset();
-        }, function(error) {
-            console.log('FAILED...', error);
+        } catch (error) {
+            console.error('Email error:', error);
             showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
-        })
-        .finally(function() {
+        } finally {
             submitButton.textContent = originalText;
             submitButton.disabled = false;
+        }
         });
-});
-
-// Email validation
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
 }
 
-// Notification system
+function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
 function showNotification(message, type = 'info') {
     // Remove existing notifications
-    const existingNotification = document.querySelector('.notification');
-    if (existingNotification) {
-        existingNotification.remove();
-    }
+    document.querySelectorAll('.notification').forEach(n => n.remove());
     
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.textContent = message;
     
-    // Add styles
+    const colors = {
+        success: 'linear-gradient(135deg, #10b981, #059669)',
+        error: 'linear-gradient(135deg, #ef4444, #dc2626)',
+        info: 'linear-gradient(135deg, #f59e0b, #d97706)'
+    };
+    
     notification.style.cssText = `
         position: fixed;
         top: 100px;
         right: 20px;
         padding: 1rem 1.5rem;
-        border-radius: 8px;
+        border-radius: 12px;
         color: white;
         font-weight: 500;
         z-index: 10000;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        max-width: 300px;
-        word-wrap: break-word;
+        transform: translateX(calc(100% + 20px));
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        max-width: 320px;
+        background: ${colors[type] || colors.info};
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
     `;
-    
-    if (type === 'success') {
-        notification.style.background = 'linear-gradient(45deg, #27ca3f, #1ed760)';
-    } else if (type === 'error') {
-        notification.style.background = 'linear-gradient(45deg, #ff5f56, #ff6b6b)';
-    } else {
-        notification.style.background = 'linear-gradient(45deg, #667eea, #764ba2)';
-    }
     
     document.body.appendChild(notification);
     
     // Animate in
-    setTimeout(() => {
+    requestAnimationFrame(() => {
         notification.style.transform = 'translateX(0)';
-    }, 100);
+    });
     
     // Remove after 5 seconds
     setTimeout(() => {
-        notification.style.transform = 'translateX(100%)';
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.remove();
-            }
-        }, 300);
+        notification.style.transform = 'translateX(calc(100% + 20px))';
+        setTimeout(() => notification.remove(), 400);
     }, 5000);
 }
 
-// Parallax effect for floating shapes
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const shapes = document.querySelectorAll('.shape');
+// ============================================
+// CURSOR GLOW EFFECT (Optional - Desktop only)
+// ============================================
+function initCursorGlow() {
+    if (window.innerWidth < 1024) return;
     
-    shapes.forEach((shape, index) => {
-        const speed = 0.5 + (index * 0.1);
-        shape.style.transform = `translateY(${scrolled * speed}px)`;
-    });
-});
-
-// Add hover effects to skill tags
-document.querySelectorAll('.skill-tag').forEach(tag => {
-    tag.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-2px) scale(1.05)';
+    const glow = document.createElement('div');
+    glow.className = 'cursor-glow';
+    glow.style.cssText = `
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s;
+    `;
+    document.body.appendChild(glow);
+    
+    let mouseX = 0, mouseY = 0;
+    let glowX = 0, glowY = 0;
+    
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
     });
     
-    tag.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1)';
-    });
-});
-
-// Add click effects to buttons
-document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('click', function(e) {
-        // Create ripple effect
-        const ripple = document.createElement('span');
-        const rect = this.getBoundingClientRect();
-        const size = Math.max(rect.width, rect.height);
-        const x = e.clientX - rect.left - size / 2;
-        const y = e.clientY - rect.top - size / 2;
+    function animateGlow() {
+        glowX += (mouseX - glowX) * 0.1;
+        glowY += (mouseY - glowY) * 0.1;
         
-        ripple.style.cssText = `
-            position: absolute;
-            width: ${size}px;
-            height: ${size}px;
-            left: ${x}px;
-            top: ${y}px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            transform: scale(0);
-            animation: ripple 0.6s linear;
-            pointer-events: none;
-        `;
+        glow.style.left = glowX + 'px';
+        glow.style.top = glowY + 'px';
         
-        this.style.position = 'relative';
-        this.style.overflow = 'hidden';
-        this.appendChild(ripple);
-        
-        setTimeout(() => {
-            ripple.remove();
-        }, 600);
-    });
-});
-
-// Add ripple animation to CSS
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes ripple {
-        to {
-            transform: scale(4);
-            opacity: 0;
-        }
+        requestAnimationFrame(animateGlow);
     }
-`;
-document.head.appendChild(style);
+    
+    animateGlow();
+}
 
-// Lazy loading for images (if any are added later)
-const lazyImages = document.querySelectorAll('img[data-src]');
-const imageObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const img = entry.target;
-            img.src = img.dataset.src;
-            img.classList.remove('lazy');
-            imageObserver.unobserve(img);
-        }
-    });
+// Initialize cursor glow on load
+window.addEventListener('load', () => {
+    setTimeout(initCursorGlow, 1000);
 });
 
-lazyImages.forEach(img => imageObserver.observe(img));
+// ============================================
+// PERFORMANCE OPTIMIZATION
+// ============================================
 
-// Performance optimization: Throttle scroll events
+// Throttle function for scroll events
 function throttle(func, limit) {
     let inThrottle;
-    return function() {
-        const args = arguments;
-        const context = this;
+    return function(...args) {
         if (!inThrottle) {
-            func.apply(context, args);
+            func.apply(this, args);
             inThrottle = true;
             setTimeout(() => inThrottle = false, limit);
         }
-    }
+    };
 }
 
-// Apply throttling to scroll events
-window.addEventListener('scroll', throttle(() => {
-    // Scroll-based animations can go here
-}, 16)); // ~60fps
+// Debounce function for resize events
+function debounce(func, wait) {
+    let timeout;
+    return function(...args) {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+}
 
-// Add loading animation
-window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-});
-
-// Add CSS for loading state
-const loadingStyle = document.createElement('style');
-loadingStyle.textContent = `
-    body:not(.loaded) {
-        overflow: hidden;
-    }
-    
-    body:not(.loaded)::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #0a0a0a;
-        z-index: 9999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    body:not(.loaded)::after {
-        content: 'Loading...';
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #667eea;
-        font-size: 1.2rem;
-        font-weight: 600;
-        z-index: 10000;
-    }
-`;
-document.head.appendChild(loadingStyle);
+// Handle resize
+window.addEventListener('resize', debounce(() => {
+    // Reinitialize elements that depend on viewport size
+}, 250));

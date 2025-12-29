@@ -37,8 +37,8 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <!-- Interactive Background -->
@@ -111,8 +111,8 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content reveal">
                 <div class="about-text">
                     <p class="about-description">
                         Welcome! I'm Sina Dibay — a software engineer and <a href="https://mentorcruise.com/mentor/moedibay/" target="_blank" class="bio-link">mentor by day</a>, and a part-time percussionist by night. 
@@ -149,11 +149,11 @@
     <!-- Apps Section -->
     <section id="apps" class="apps">
         <div class="container">
-            <h2 class="section-title">Apps</h2>
-            <div class="apps-grid">
+            <h2 class="section-title reveal">Apps</h2>
+            <div class="apps-grid stagger-children">
                 <div class="app-card">
                     <div class="app-icon">
-                        <i class="fas fa-calculator"></i>
+                        <img src="splitzy.png" alt="Splitzy" class="app-icon-img">
                     </div>
                     <div class="app-content">
                         <h3 class="app-title">Splitzy - Fair Cost</h3>
@@ -174,6 +174,29 @@
                         </a>
                     </div>
                 </div>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <img src="baziihub.png" alt="Baziihub" class="app-icon-img">
+                    </div>
+                    <div class="app-content">
+                        <h3 class="app-title">Baziihub - بازی‌هاب</h3>
+                        <p class="app-description">
+                            A fun hub for Persian-speaking families and friends to play multiplayer online games together — completely free and no sign-up required!
+                        </p>
+                        <p class="app-features">
+                            Baziihub brings people together through games. Whether you're playing word games like Esm-e Ramz or the classic Esm Famil, this platform makes it easy to start a game and enjoy quality time with loved ones. Works on any device — mobile or desktop.
+                        </p>
+                        <div class="app-badges">
+                            <span class="app-badge">Web</span>
+                            <span class="app-badge">Free</span>
+                            <span class="app-badge">فارسی</span>
+                        </div>
+                        <a href="https://baziihub.com/" target="_blank" class="app-download">
+                            <i class="fas fa-gamepad"></i>
+                            Play Now
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -181,13 +204,13 @@
     <!-- Music Section -->
     <section id="music" class="music">
         <div class="container">
-            <h2 class="section-title">Music & Performances</h2>
+            <h2 class="section-title reveal">Music & Performances</h2>
             <div class="music-content">
-                <div class="music-intro">
+                <div class="music-intro reveal">
                     <p>When I'm not coding, you'll find me creating music and performing. Here's a glimpse into my musical journey:</p>
                 </div>
                 
-                <div class="music-grid">
+                <div class="music-grid stagger-children">
                     <div class="music-card spotify-card">
                         <div class="music-card-header">
                             <i class="fab fa-spotify"></i>
@@ -249,8 +272,8 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-content reveal">
                 <div class="contact-text">
                     <p>I'm always open to creative projects, partnerships, and conversations. Whether it's about music, mentorship, or engineering ideas, feel free to reach out!</p>
                 </div>
