@@ -3,32 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-568TEMVNPF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-568TEMVNPF');
+    </script>
+    
     <title>Dbaydev LLC - Software Engineering, Cloud Architecture & Distributed Systems</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Dbaydev LLC - A software company specializing in mobile apps, cloud architecture, distributed systems, and reactive system design. B2B and B2C solutions. Based in San Francisco Bay Area.">
-    <meta name="keywords" content="Dbaydev, Mobile Apps, iOS Development, Android Development, Software Consulting, Distributed Systems, Cloud Architecture, Reactive Systems, B2B, B2C, San Francisco, Splitzy, Baziihub">
+    <meta name="description" content="Dbaydev LLC - Software engineering company specializing in mobile app development, cloud architecture, distributed systems, microservices, and reactive system design. iOS, Android apps. B2B enterprise & B2C solutions. San Francisco Bay Area software consulting.">
+    <meta name="keywords" content="Dbaydev, Dbaydev LLC, software engineering, software development company, mobile app development, iOS app development, Android app development, mobile apps, Splitzy app, Splitzy expense splitting, Baziihub, Persian games, software consulting, freelance software engineer, cloud architecture, AWS consulting, cloud native, distributed systems, microservices architecture, reactive systems, event-driven architecture, B2B software, B2C apps, enterprise software, SaaS development, API development, full stack development, technical consulting, software architect, San Francisco software company, Bay Area developer, startup consulting, app development company, Swift developer, Kotlin developer, expense tracker app, trip expense splitter, cost sharing app">
     <meta name="author" content="Dbaydev LLC">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://dbay.dev/">
+    
+    <!-- Additional SEO -->
+    <meta name="geo.region" content="US-CA">
+    <meta name="geo.placename" content="San Francisco Bay Area">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dbay.dev/">
-    <meta property="og:title" content="Dbaydev LLC - Software Engineering & Cloud Architecture">
-    <meta property="og:description" content="Mobile apps, distributed systems, cloud architecture, and reactive system design. B2B and B2C solutions for startups to enterprise.">
+    <meta property="og:site_name" content="Dbaydev LLC">
+    <meta property="og:title" content="Dbaydev LLC - Mobile Apps, Cloud Architecture & Software Consulting">
+    <meta property="og:description" content="Software engineering company: mobile app development (iOS/Android), cloud architecture, distributed systems, microservices. Creators of Splitzy & Baziihub apps. San Francisco Bay Area.">
     <meta property="og:image" content="https://dbay.dev/og-image.jpg">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://dbay.dev/">
-    <meta property="twitter:title" content="Dbaydev LLC - Software Engineering & Cloud Architecture">
-    <meta property="twitter:description" content="Mobile apps, distributed systems, cloud architecture, and reactive system design. B2B and B2C solutions for startups to enterprise.">
+    <meta property="twitter:title" content="Dbaydev LLC - Mobile Apps, Cloud Architecture & Software Consulting">
+    <meta property="twitter:description" content="Software engineering company: mobile app development (iOS/Android), cloud architecture, distributed systems, microservices. Creators of Splitzy & Baziihub apps.">
     <meta property="twitter:image" content="https://dbay.dev/og-image.jpg">
     
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Dbaydev LLC",
+        "url": "https://dbay.dev",
+        "logo": "https://dbay.dev/logo.png",
+        "description": "Software engineering company specializing in mobile app development, cloud architecture, distributed systems, and software consulting.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "CA",
+            "addressCountry": "US",
+            "addressLocality": "San Francisco Bay Area"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Sina Dibay"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/company/dbaydev-llc/"
+        ],
+        "knowsAbout": ["Mobile App Development", "iOS Development", "Android Development", "Cloud Architecture", "Distributed Systems", "Software Consulting", "Microservices", "Reactive Systems"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Splitzy",
+        "operatingSystem": "iOS, Android, macOS",
+        "applicationCategory": "FinanceApplication",
+        "description": "Expense splitting app for trips and group activities. Split costs fairly with friends.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Baziihub",
+        "operatingSystem": "iOS, Web",
+        "applicationCategory": "GameApplication",
+        "description": "Free multiplayer online games platform for Persian-speaking families and friends.",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "inLanguage": "fa"
+    }
+    </script>
+    
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.png">
     
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -264,15 +344,21 @@
                         <span class="product-badge">macOS</span>
                         <span class="product-badge">Android</span>
                     </div>
-                    <div class="product-actions">
-                        <a href="https://apps.apple.com/gb/app/splitzy-fair-cost/id6751311705" target="_blank" class="product-btn product-btn-primary">
-                            <i class="fab fa-apple"></i>
-                            App Store
-                        </a>
-                        <a href="https://play.google.com/store/apps/details?id=com.splitzy.app" target="_blank" class="product-btn product-btn-secondary">
-                            <i class="fab fa-google-play"></i>
-                            Google Play
-                        </a>
+                    <div class="product-footer">
+                        <div class="product-actions">
+                            <a href="https://apps.apple.com/gb/app/splitzy-fair-cost/id6751311705" target="_blank" class="product-btn product-btn-primary">
+                                <i class="fab fa-apple"></i>
+                                App Store
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.splitzy.app" target="_blank" class="product-btn product-btn-secondary">
+                                <i class="fab fa-google-play"></i>
+                                Google Play
+                            </a>
+                        </div>
+                        <div class="product-qr">
+                            <img src="splitzy-qr.png" alt="Scan to download Splitzy" class="qr-code">
+                            <span class="qr-label">Scan to download</span>
+                        </div>
                     </div>
                 </div>
                 <div class="product-card reveal">
@@ -300,15 +386,21 @@
                         <span class="product-badge">Free</span>
                         <span class="product-badge">فارسی</span>
                     </div>
-                    <div class="product-actions">
-                        <a href="https://baziihub.com/" target="_blank" class="product-btn product-btn-primary">
-                            <i class="fas fa-gamepad"></i>
-                            Play Online
-                        </a>
-                        <a href="https://apps.apple.com/us/app/baziihub/id6757132764" target="_blank" class="product-btn product-btn-secondary">
-                            <i class="fab fa-apple"></i>
-                            App Store
-                        </a>
+                    <div class="product-footer">
+                        <div class="product-actions">
+                            <a href="https://baziihub.com/" target="_blank" class="product-btn product-btn-primary">
+                                <i class="fas fa-gamepad"></i>
+                                Play Online
+                            </a>
+                            <a href="https://apps.apple.com/us/app/baziihub/id6757132764" target="_blank" class="product-btn product-btn-secondary">
+                                <i class="fab fa-apple"></i>
+                                App Store
+                            </a>
+                        </div>
+                        <div class="product-qr">
+                            <img src="baziihub-qr.png" alt="Scan to download Baziihub" class="qr-code">
+                            <span class="qr-label">Scan to download</span>
+                        </div>
                     </div>
                 </div>
             </div>
