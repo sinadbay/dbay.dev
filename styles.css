@@ -729,6 +729,15 @@ section {
     margin-bottom: 0.2rem;
 }
 
+.product-title-link {
+    color: inherit;
+    text-decoration: none;
+}
+.product-title-link:hover {
+    color: var(--accent-primary);
+    text-decoration: underline;
+}
+
 .product-tagline {
     font-size: 0.9rem;
     color: var(--text-muted);
