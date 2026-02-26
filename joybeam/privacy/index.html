@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JoyBeam Privacy Policy | Dbaydev LLC</title>
+    <meta name="description" content="JoyBeam Privacy Policy. How we handle your data across local, cloud, and AI systems. Privacy First architecture.">
+    <link rel="canonical" href="https://dbay.dev/joybeam/privacy/">
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .jb-privacy-doc { max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+        .jb-privacy-doc h1 { font-family: var(--jb-font-display); font-size: 1.75rem; font-weight: 700; color: var(--jb-text); margin-bottom: 0.5rem; }
+        .jb-privacy-doc .meta { font-size: 0.9rem; color: var(--jb-text-muted); margin-bottom: 2rem; }
+        .jb-privacy-doc .intro { font-size: 1.05rem; color: var(--jb-text-muted); line-height: 1.75; margin-bottom: 2rem; }
+        .jb-privacy-doc h2 { font-family: var(--jb-font-display); font-size: 1.25rem; font-weight: 600; color: var(--jb-text); margin-top: 2.25rem; margin-bottom: 0.75rem; }
+        .jb-privacy-doc p, .jb-privacy-doc li { font-size: 1rem; color: var(--jb-text-muted); line-height: 1.75; margin-bottom: 0.75rem; }
+        .jb-privacy-doc ul { margin: 0.5rem 0 1rem 1.25rem; padding: 0; }
+        .jb-privacy-doc ul li { margin-bottom: 0.4rem; }
+        .jb-privacy-doc strong { color: var(--jb-text); }
+        .jb-privacy-doc a { color: var(--jb-teal); font-weight: 500; text-decoration: none; }
+        .jb-privacy-doc a:hover { text-decoration: underline; }
+        .jb-privacy-doc .last-updated { margin-top: 2.5rem; font-size: 0.9rem; color: var(--jb-text-muted); font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="jb-bg"></div>
+
+    <nav class="jb-nav" id="jb-nav">
+        <a href="../" class="jb-nav-logo">
+            <img src="../../logo.png" alt="Dbaydev">
+            <span>Dbaydev</span>
+        </a>
+        <ul class="jb-nav-links">
+            <li><a href="../">JoyBeam</a></li>
+            <li><a href="../../">Home</a></li>
+            <li><a href="../../#contact">Contact</a></li>
+        </ul>
+        <button class="jb-nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main class="jb-section" style="padding-top: 5rem;">
+        <article class="jb-privacy-doc">
+            <h1>JoyBeam Privacy Policy</h1>
+            <p class="meta"><strong>Effective Date:</strong> February 8, 2026 &nbsp;|&nbsp; <strong>Owner:</strong> Dbaydev LLC</p>
+
+            <p class="intro">
+                JoyBeam is built with a <strong>"Privacy First"</strong> architecture. We believe your most personal reflections should remain under your control. This policy explains how we handle your data across our local, cloud, and AI systems, and fulfills our legal obligation to disclose how Artificial Intelligence (AI) interacts with your information.
+            </p>
+
+            <h2>1. On-Device Storage (The Vault)</h2>
+            <p>Most of your data resides exclusively on your iPhone.</p>
+            <ul>
+                <li><strong>Reflections & Daily Notes:</strong> Stored in a local database (SwiftData) that is hardware-encrypted by Apple's iOS.</li>
+                <li><strong>Encryption Keys:</strong> Your journal data is encrypted using <strong>AES-GCM (256-bit)</strong> before any cloud synchronization. The decryption key is stored in your <strong>iOS Keychain</strong> and synced via <strong>iCloud Keychain</strong> to enable data recovery across your Apple devices and app reinstalls. <strong>Note:</strong> iCloud Keychain is managed entirely by Apple. While Apple represents that iCloud Keychain uses end-to-end encryption, JoyBeam cannot independently verify or guarantee the security of Apple's infrastructure. See Section 3 for details.</li>
+                <li><strong>AI Context:</strong> We generate a short-term summary (TLDR) of your history to assist Lumi. This summary is stored locally and is not archived on our servers.</li>
+            </ul>
+
+            <h2>2. Artificial Intelligence & Transparency (Lumi Chat)</h2>
+            <p>JoyBeam utilizes <strong>Lumi</strong>, an AI agent powered by OpenAI (GPT-4o).</p>
+            <ul>
+                <li><strong>AI Disclosure:</strong> In compliance with <strong>California SB 243</strong>, we disclose that Lumi is an artificially generated system and not a human. Lumi cannot provide medical advice, diagnosis, or crisis counseling.</li>
+                <li><strong>Data Processing:</strong> Only necessary, anonymized context is sent to the AI to answer your queries.</li>
+                <li><strong>No Training:</strong> Your personal data is <strong>not</strong> used to train OpenAI's foundational models. We use enterprise-tier privacy settings to ensure data is processed in a "Zero-Retention" environment.</li>
+                <li><strong>Mandatory Safety Protocols:</strong> We maintain a strictly coded "Safety Layer." If Lumi detects language indicating intent to harm yourself or others, the AI session will be suspended, and you will be automatically provided with crisis resources (e.g., 988 Suicide & Crisis Lifeline).</li>
+            </ul>
+
+            <h2>3. Cloud Synchronization & Security</h2>
+            <p>To support backups and community features, we use <strong>Firebase (Google Cloud)</strong>:</p>
+            <ul>
+                <li><strong>Encrypted Cloud Backups (Plus/Pro):</strong> Your reflections, check-in notes, gratitude entries, daily plans, and chat messages are encrypted on your device using AES-GCM (256-bit) before being transmitted to Firebase. The data stored on our servers is ciphertext that JoyBeam cannot read without your key.</li>
+                <li><strong>Key Storage & Recovery:</strong> Your encryption key is stored in your iOS Keychain and synced via Apple's iCloud Keychain to your other Apple devices. This enables recovery after reinstalling the app or switching to a new iPhone, as long as you remain signed in to the same Apple ID with iCloud Keychain enabled.</li>
+                <li><strong>What This Means (Transparency):</strong> JoyBeam's servers <strong>never</strong> see or store your encryption key. However, because the key is synced through Apple's iCloud Keychain, Apple's infrastructure handles key transport and storage. Apple represents that iCloud Keychain is end-to-end encrypted, but JoyBeam cannot independently audit or guarantee Apple's security practices. This system should be understood as <strong>"encrypted at rest with key recovery managed by Apple"</strong> rather than a fully zero-knowledge system controlled solely by JoyBeam.</li>
+                <li><strong>Risk of Data Loss:</strong> If you disable iCloud Keychain, sign out of your Apple ID, or lose access to your Apple account, your encryption key may become unrecoverable and your cloud-backed data will be permanently inaccessible. JoyBeam has no ability to recover your key. We strongly recommend enabling <strong>Two-Factor Authentication</strong> and <strong>Advanced Data Protection</strong> on your Apple ID.</li>
+                <li><strong>Lumi Chat Retention:</strong> To support multi-device use, Lumi Chat logs are stored in encrypted form. These logs are automatically and permanently purged from our servers after <strong>30 days</strong>.</li>
+                <li><strong>Social Data:</strong> Phone numbers and profile photos are stored solely to enable "Beaming" support to friends.</li>
+            </ul>
+
+            <h2>4. Your Control, Deletion & Audit Rights</h2>
+            <p>You own your data. We provide tools to ensure transparency and portability:</p>
+            <ul>
+                <li><strong>AI Provenance:</strong> You have the right to know when you are interacting with AI. Per 2026 regulations, JoyBeam provides a visual reminder every 3 hours during continuous AI sessions.</li>
+                <li><strong>PDF Export:</strong> Export your entire history at any time via Profile settings (Pro).</li>
+                <li><strong>Account Purge:</strong> When you delete your account, all personal documents, photos, and encrypted reflections are permanently destroyed. Past interactions in "Circles" are anonymized to "Deleted User."</li>
+            </ul>
+
+            <h2>5. Third-Party Partners</h2>
+            <p>We partner with these providers under strict Data Processing Agreements:</p>
+            <ul>
+                <li><strong>Google Firebase:</strong> Secure Authentication, Cloud Storage, and push notifications.</li>
+                <li><strong>OpenAI:</strong> AI analysis and content generation (Lumi).</li>
+                <li><strong>Apple:</strong> Sign in with Apple, App Store and in-app purchase processing.</li>
+                <li><strong>RevenueCat:</strong> Secure subscription management (if applicable).</li>
+            </ul>
+
+            <h2>6. App Analytics</h2>
+            <p>We use Google Analytics for Firebase to understand how JoyBeam is used and to improve the app. This data is aggregated and anonymous. We do not track your location, and we do not share your personal reflections or private journal entries with Google.</p>
+
+            <h2>7. Contact & Support</h2>
+            <p>JoyBeam is owned and operated by <strong>Dbaydev LLC</strong>.</p>
+            <p>If you have questions about this policy or your data rights under the 2026 AI Transparency Acts, please contact us through the app's support channel or at <a href="https://dbay.dev/#contact">https://dbay.dev/#contact</a>.</p>
+
+            <p class="last-updated">Last Updated: February 8, 2026</p>
+        </article>
+    </main>
+
+    <footer class="jb-footer">
+        <div class="jb-footer-links">
+            <a href="../">JoyBeam</a>
+            <a href="../../">Home</a>
+            <a href="../../#contact">Contact</a>
+        </div>
+        <p class="jb-footer-copy">&copy; 2025 Dbaydev LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
