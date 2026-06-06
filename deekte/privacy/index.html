@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>deekte Privacy Policy | dbaydev LLC</title>
+    <meta name="description" content="deekte Privacy Policy. deekte is anonymous by design: no account, no keystroke logging, and audio is never stored. Learn how we handle dictation audio and data.">
+    <link rel="canonical" href="https://dbay.dev/deekte/privacy/">
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="dk-bg"></div>
+
+    <nav class="dk-nav" id="dk-nav">
+        <a href="../../" class="dk-nav-logo">
+            <img src="../../logo.png" alt="dbaydev">
+            <span>dbaydev</span>
+        </a>
+        <ul class="dk-nav-links">
+            <li><a href="../">deekte</a></li>
+            <li><a href="../../">Home</a></li>
+            <li><a href="../../#contact">Contact</a></li>
+        </ul>
+        <button class="dk-nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main class="dk-section" style="padding-top: 5rem;">
+        <article class="dk-privacy-doc">
+            <h1>deekte Privacy Policy</h1>
+            <p class="meta"><strong>Effective Date:</strong> June 6, 2026 &nbsp;|&nbsp; <strong>Owner:</strong> dbaydev LLC</p>
+
+            <p class="intro">
+                deekte (<span class="dk-fa">دیکته</span>) is a Farsi keyboard for iOS with built-in voice dictation. It is <strong>anonymous by design</strong>: there is no name, email, account, or login. This policy explains what data deekte processes, what it does <em>not</em> collect, and how dictation audio is handled. It is written to match our App Store "App Privacy" disclosures.
+            </p>
+
+            <h2>1. What deekte collects and processes</h2>
+            <ul>
+                <li><strong>Anonymous device identifier:</strong> a random UUID is generated on your device and stored in the iOS Keychain. It is used only to issue access tokens and to enforce the free-tier limit. It is <strong>not</strong> linked to your name, email, Apple ID, or any personal identity.</li>
+                <li><strong>Voice / audio:</strong> the microphone is used <strong>only</strong> while you are actively dictating (after you tap the mic). Audio is streamed in real time over an <strong>encrypted (TLS) connection</strong> to deekte's backend, which relays it to our speech-recognition provider for transcription. <strong>Audio is not stored</strong> on deekte's servers — it is processed transiently to produce text, and the resulting text is returned to your device.</li>
+                <li><strong>Transcribed text:</strong> the text is returned to your device and inserted into your current app. deekte does <strong>not</strong> store the content of your dictations or what you type on its servers.</li>
+                <li><strong>Usage data:</strong> a running total of dictation <strong>minutes used</strong> is stored (keyed to the anonymous device ID) solely to enforce the free-tier limit.</li>
+                <li><strong>Purchases / subscriptions:</strong> purchases are processed by <strong>Apple</strong> via the App Store. deekte's server receives Apple's signed transaction receipt to verify an active subscription. <strong>No payment card or billing information is ever sent to or stored by deekte</strong> — Apple handles all payment.</li>
+            </ul>
+
+            <h2>2. What deekte does NOT collect</h2>
+            <ul>
+                <li>deekte does <strong>not</strong> log your keystrokes or collect the text you type with the keyboard.</li>
+                <li>No advertising, no third-party analytics or tracking SDKs, and no selling of data.</li>
+                <li>No name, email, contacts, location, or account.</li>
+            </ul>
+
+            <h2>3. Keyboard "Full Access"</h2>
+            <p>
+                iOS requires you to "Allow Full Access" for the deekte keyboard so it can send audio for transcription and hand the resulting text back to the app you're typing in. Full Access is used <strong>only</strong> for the dictation feature. deekte does <strong>not</strong> transmit your keystrokes.
+            </p>
+
+            <h2>4. Third-party subprocessors</h2>
+            <p>deekte relies on the following providers to operate the service:</p>
+            <ul>
+                <li><strong>Deepgram, Inc.</strong> — speech-to-text transcription provider; dictation audio is sent for transcription. See <a href="https://deepgram.com/privacy" target="_blank" rel="noopener">Deepgram's privacy policy</a>.</li>
+                <li><strong>Google Cloud Platform</strong> — backend hosting, located in the United States.</li>
+                <li><strong>Apple</strong> — App Store distribution and payment processing.</li>
+            </ul>
+
+            <h2>5. Data retention &amp; deletion</h2>
+            <p>
+                The anonymous device ID and usage-minutes total are retained to operate the free tier. Because there is no account, you can request deletion of your device's data by emailing <a href="mailto:dev@dbay.dev">dev@dbay.dev</a> with your request.
+            </p>
+
+            <h2>6. Children</h2>
+            <p>
+                deekte is not directed to children under 13 and does not knowingly collect data from them. The App Store age rating is 4+.
+            </p>
+
+            <h2>7. Security</h2>
+            <p>
+                All network traffic uses TLS encryption, and access tokens are stored in the iOS Keychain.
+            </p>
+
+            <h2>8. Changes to this policy</h2>
+            <p>
+                We may update this policy from time to time. When we do, we will revise the effective date above accordingly.
+            </p>
+
+            <h2>9. Contact</h2>
+            <p>
+                deekte is owned and operated by <strong>dbaydev LLC</strong>, 30 N Gould St, Sheridan, WY 82801-6317, United States. For privacy questions or data requests, contact <a href="mailto:dev@dbay.dev">dev@dbay.dev</a>.
+            </p>
+
+            <p class="last-updated">Last Updated: June 6, 2026</p>
+        </article>
+    </main>
+
+    <footer class="dk-footer">
+        <div class="dk-footer-links">
+            <a href="../">deekte</a>
+            <a href="../../">Home</a>
+            <a href="mailto:dev@dbay.dev">Support</a>
+            <a href="../../#contact">Contact</a>
+        </div>
+        <p class="dk-footer-copy">&copy; 2026 dbaydev LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
