@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Halname Privacy Policy | dbaydev LLC</title>
+    <meta name="description" content="Halname Privacy Policy. Halname works without an account and keeps entries on your device by default; optional sync end-to-end encrypts your notes before they leave your phone.">
+    <link rel="canonical" href="https://dbay.dev/halname/privacy/">
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="hn-bg"></div>
+
+    <nav class="hn-nav" id="hn-nav">
+        <a href="../../" class="hn-nav-logo">
+            <img src="../../logo.png" alt="dbaydev">
+            <span>dbaydev</span>
+        </a>
+        <ul class="hn-nav-links">
+            <li><a href="../">Halname</a></li>
+            <li><a href="../../">Home</a></li>
+            <li><a href="../../#contact">Contact</a></li>
+        </ul>
+        <button class="hn-nav-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <main class="hn-section" style="padding-top: 5rem;">
+        <article class="hn-privacy-doc">
+            <h1>Halname Privacy Policy</h1>
+            <p class="meta"><strong>Effective Date:</strong> July 5, 2026 &nbsp;|&nbsp; <strong>Owner:</strong> dbaydev LLC</p>
+
+            <p class="intro">
+                Halname (<span class="hn-fa">حال‌نامه</span>) is a personal journal for iPhone where you log good and hard moments of your day. It is <strong>private by default</strong>: the app works fully without an account, and your entries stay on your device unless you explicitly sign in to enable sync. This policy states, factually, what the app stores, where, and who can access it.
+            </p>
+
+            <h2>1. Using Halname without an account (the default)</h2>
+            <ul>
+                <li><strong>Your entries</strong> — the date, whether the moment was good or hard, your one-line note, and the time it was saved — are stored in a database <strong>on your device only</strong>.</li>
+                <li>The local database is protected with <strong>iOS Data Protection</strong> (complete file protection): it is encrypted at rest with keys derived from your device passcode.</li>
+                <li>Reminder times and app settings are likewise stored on the device.</li>
+                <li>In this mode, your entries are never transmitted to us or to anyone else.</li>
+            </ul>
+
+            <h2>2. Optional sign-in and sync</h2>
+            <p>
+                You may sign in with <strong>Sign in with Apple</strong> or <strong>Google</strong> to back up your entries and sync them across your devices. Sign-in is never required to use the app. If you sign in:
+            </p>
+            <ul>
+                <li><strong>Account data we receive:</strong> a unique user identifier, and the name and email address your identity provider (Apple or Google) shares. Authentication is handled by <strong>Firebase Authentication</strong> (a Google service).</li>
+                <li><strong>Where entries are stored:</strong> in <strong>Google Cloud Firestore</strong>, in a private area tied to your account. Server-side security rules permit only your authenticated account to read or write your data.</li>
+                <li><strong>End-to-end encryption of notes:</strong> the text of every note is encrypted <strong>on your device</strong> with AES-256-GCM before upload. The encryption key is generated on your device and stored in your <strong>iCloud Keychain</strong>; it is never sent to us or to Google. Google's servers store only ciphertext — neither dbaydev LLC nor Google can read your notes.</li>
+                <li><strong>What is not end-to-end encrypted:</strong> the entry date, the good/hard flag, and timestamps are stored in ordinary (server-side encrypted) form, as they are needed to order and sync entries. They remain private to your account.</li>
+                <li><strong>A practical caveat:</strong> because only your devices hold the note key, losing access to your iCloud Keychain means your synced note text cannot be recovered by anyone, including us.</li>
+                <li>Signing out stops syncing; your local data remains on the device.</li>
+            </ul>
+
+            <h2>3. Usage analytics</h2>
+            <p>
+                Halname records anonymized usage statistics through <strong>Google Analytics for Firebase</strong> so we can understand how many people use the app and which features matter. This includes counts of events such as: an entry was saved (only whether it was good or hard — <strong>never the note text</strong>), onboarding was completed, a reminder was added, and a sign-in was completed, along with standard device information collected by the SDK (such as device model, OS version, and app opens). We do not use advertising SDKs and do not track you across other apps or websites.
+            </p>
+
+            <h2>4. Reminders and notifications</h2>
+            <p>
+                Daily reminders are <strong>local notifications</strong>, scheduled entirely on your device. No notification data is sent to any server.
+            </p>
+
+            <h2>5. Ratings prompt</h2>
+            <p>
+                Halname may occasionally show Apple's standard in-app rating prompt. This is handled by iOS; the app sends nothing to us.
+            </p>
+
+            <h2>6. What Halname does NOT do</h2>
+            <ul>
+                <li>No advertising and no advertising SDKs.</li>
+                <li>No selling or sharing of your data with third parties beyond the processors listed below.</li>
+                <li>No reading of your note content by us or by Google — synced notes are end-to-end encrypted.</li>
+                <li>No location collection, no contact access, no cross-app tracking.</li>
+            </ul>
+
+            <h2>7. Third-party processors</h2>
+            <ul>
+                <li><strong>Google LLC</strong> — Firebase Authentication (sign-in), Cloud Firestore (encrypted sync storage), and Google Analytics for Firebase (anonymized usage statistics). Servers located in the United States. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's privacy documentation</a>.</li>
+                <li><strong>Apple Inc.</strong> — App Store distribution, Sign in with Apple, iCloud Keychain (stores your note-encryption key), and the in-app rating system.</li>
+            </ul>
+
+            <h2>8. Data retention &amp; deletion</h2>
+            <ul>
+                <li><strong>Entries:</strong> deleting an entry in the app removes it from your device and, if you are signed in, from the synced copy in Firestore.</li>
+                <li><strong>Local data:</strong> deleting the app removes all locally stored data.</li>
+                <li><strong>Account:</strong> to delete your account and all synced data, email <a href="mailto:dev@dbay.dev">dev@dbay.dev</a> from the address linked to your account and we will remove it.</li>
+            </ul>
+
+            <h2>9. Children</h2>
+            <p>
+                Halname is not directed to children under 13 and does not knowingly collect data from them.
+            </p>
+
+            <h2>10. Security</h2>
+            <p>
+                All network traffic uses TLS encryption. Local data is encrypted at rest by iOS Data Protection. Synced note text is additionally end-to-end encrypted with a key held only in your iCloud Keychain.
+            </p>
+
+            <h2>11. Changes to this policy</h2>
+            <p>
+                We may update this policy from time to time. When we do, we will revise the effective date above accordingly.
+            </p>
+
+            <h2>12. Contact</h2>
+            <p>
+                Halname is owned and operated by <strong>dbaydev LLC</strong>, 30 N Gould St, Sheridan, WY 82801-6317, United States. For privacy questions or data requests, contact <a href="mailto:dev@dbay.dev">dev@dbay.dev</a>.
+            </p>
+
+            <p class="last-updated">Last Updated: July 5, 2026</p>
+        </article>
+    </main>
+
+    <footer class="hn-footer">
+        <div class="hn-footer-links">
+            <a href="../">Halname</a>
+            <a href="../../">Home</a>
+            <a href="mailto:dev@dbay.dev">Support</a>
+            <a href="../../#contact">Contact</a>
+        </div>
+        <p class="hn-footer-copy">&copy; 2026 dbaydev LLC. All rights reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

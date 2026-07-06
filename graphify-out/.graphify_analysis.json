@@ -1,0 +1,136 @@
+{
+  "communities": {
+    "0": [
+      "dbay_dev_script_animatecounter",
+      "dbay_dev_script_debounce",
+      "dbay_dev_script_initcounteranimation",
+      "dbay_dev_script_initcursorglow",
+      "dbay_dev_script_initloader",
+      "dbay_dev_script_initmagneticeffects",
+      "dbay_dev_script_initnavigation",
+      "dbay_dev_script_initparallaxorbs",
+      "dbay_dev_script_initscrollanimations",
+      "dbay_dev_script_initsmoothscroll",
+      "dbay_dev_script_throttle",
+      "script_js"
+    ],
+    "1": [
+      "splitzy_index_html_expo",
+      "splitzy_index_html_postgresql",
+      "splitzy_index_html_react_native",
+      "splitzy_index_html_react_query",
+      "splitzy_index_html_row_level_security",
+      "splitzy_index_html_splitzy",
+      "splitzy_index_html_supabase",
+      "splitzy_index_html_typescript",
+      "splitzy_index_html_zod"
+    ],
+    "2": [
+      "index_baziihub",
+      "index_dbaydev_llc",
+      "index_joybeam",
+      "index_splitzy",
+      "joybeam_index_joybeam_app",
+      "joybeam_privacy_joybeam_privacy_policy"
+    ],
+    "3": [
+      "dbay_dev_script_initcontactform",
+      "dbay_dev_script_isvalidemail",
+      "dbay_dev_script_shownotification"
+    ],
+    "4": [
+      "joybeam_script_js"
+    ],
+    "5": [
+      "splitzy_script_js"
+    ]
+  },
+  "cohesion": {
+    "0": 0.16666666666666666,
+    "1": 0.2222222222222222,
+    "2": 0.3333333333333333,
+    "3": 0.6666666666666666,
+    "4": 1.0,
+    "5": 1.0
+  },
+  "gods": [
+    {
+      "id": "splitzy_index_html_splitzy",
+      "label": "Splitzy",
+      "degree": 8
+    },
+    {
+      "id": "dbay_dev_script_initcontactform",
+      "label": "initContactForm()",
+      "degree": 3
+    },
+    {
+      "id": "index_dbaydev_llc",
+      "label": "Dbaydev LLC",
+      "degree": 3
+    },
+    {
+      "id": "dbay_dev_script_isvalidemail",
+      "label": "isValidEmail()",
+      "degree": 2
+    },
+    {
+      "id": "dbay_dev_script_shownotification",
+      "label": "showNotification()",
+      "degree": 2
+    },
+    {
+      "id": "index_joybeam",
+      "label": "JoyBeam",
+      "degree": 2
+    },
+    {
+      "id": "joybeam_index_joybeam_app",
+      "label": "JoyBeam App",
+      "degree": 2
+    },
+    {
+      "id": "index_splitzy",
+      "label": "Splitzy",
+      "degree": 1
+    },
+    {
+      "id": "index_baziihub",
+      "label": "Baziihub",
+      "degree": 1
+    },
+    {
+      "id": "joybeam_privacy_joybeam_privacy_policy",
+      "label": "JoyBeam Privacy Policy",
+      "degree": 1
+    }
+  ],
+  "surprises": [
+    {
+      "source": "JoyBeam",
+      "target": "JoyBeam App",
+      "source_files": [
+        "index.html",
+        "joybeam/index.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "JoyBeam App",
+      "target": "JoyBeam Privacy Policy",
+      "source_files": [
+        "joybeam/index.html",
+        "joybeam/privacy/index.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 303401,
+    "output": 1737
+  }
+}
