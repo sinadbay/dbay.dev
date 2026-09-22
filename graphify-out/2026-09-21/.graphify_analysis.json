@@ -34,91 +34,24 @@
       "joybeam_privacy_joybeam_privacy_policy"
     ],
     "3": [
-      "halname_index_html",
-      "halname_privacy_html",
-      "halname_privacy_index_html",
-      "halname_static_app_icon_png"
-    ],
-    "4": [
-      "claude_settings_local_json",
-      "claude_settings_local_permissions",
-      "claude_settings_local_permissions_allow"
-    ],
-    "5": [
       "dbay_dev_script_initcontactform",
       "dbay_dev_script_isvalidemail",
       "dbay_dev_script_shownotification"
     ],
-    "6": [
-      "deekte_deekte",
-      "deekte_privacy_policy"
-    ],
-    "7": [
-      "splitzy_privacyhtml",
-      "splitzy_privacyindexhtml"
-    ],
-    "8": [
+    "4": [
       "joybeam_script_js"
     ],
-    "9": [
+    "5": [
       "splitzy_script_js"
-    ],
-    "10": [
-      "halname_script_js"
-    ],
-    "11": [
-      "deekte_script_js"
-    ],
-    "12": [
-      "splitzy_indexhtml"
-    ],
-    "13": [
-      "deekte_static_app_icon_png"
-    ],
-    "14": [
-      "joybeam_privacy_html"
-    ],
-    "15": [
-      "joybeam_static_4_png"
-    ],
-    "16": [
-      "joybeam_static_5_png"
-    ],
-    "17": [
-      "joybeam_static_7_png"
-    ],
-    "18": [
-      "joybeam_static_8_png"
-    ],
-    "19": [
-      "joybeam_static_9_png"
-    ],
-    "20": [
-      "joybeam_static_app_icon_png"
     ]
   },
   "cohesion": {
     "0": 0.16666666666666666,
     "1": 0.2222222222222222,
     "2": 0.3333333333333333,
-    "3": 0.5,
-    "4": 0.6666666666666666,
-    "5": 0.6666666666666666,
-    "6": 1.0,
-    "7": 1.0,
-    "8": 1.0,
-    "9": 1.0,
-    "10": 1.0,
-    "11": 1.0,
-    "12": 1.0,
-    "13": 1.0,
-    "14": 1.0,
-    "15": 1.0,
-    "16": 1.0,
-    "17": 1.0,
-    "18": 1.0,
-    "19": 1.0,
-    "20": 1.0
+    "3": 0.6666666666666666,
+    "4": 1.0,
+    "5": 1.0
   },
   "gods": [
     {
@@ -157,19 +90,19 @@
       "degree": 2
     },
     {
-      "id": "claude_settings_local_permissions",
-      "label": "permissions",
-      "degree": 2
+      "id": "index_splitzy",
+      "label": "Splitzy",
+      "degree": 1
     },
     {
-      "id": "halname_index_html",
-      "label": "Halname Index HTML",
-      "degree": 2
+      "id": "index_baziihub",
+      "label": "Baziihub",
+      "degree": 1
     },
     {
-      "id": "halname_privacy_index_html",
-      "label": "Halname Privacy Policy",
-      "degree": 2
+      "id": "joybeam_privacy_joybeam_privacy_policy",
+      "label": "JoyBeam Privacy Policy",
+      "degree": 1
     }
   ],
   "surprises": [
@@ -185,17 +118,6 @@
       "why": "connects across different repos/directories"
     },
     {
-      "source": "Halname Index HTML",
-      "target": "Halname Static App Icon PNG",
-      "source_files": [
-        "halname/index.html",
-        "halname/static/app-icon.png"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "references",
-      "why": "crosses file types (doc \u2194 image)"
-    },
-    {
       "source": "JoyBeam App",
       "target": "JoyBeam Privacy Policy",
       "source_files": [
@@ -205,32 +127,10 @@
       "confidence": "EXTRACTED",
       "relation": "references",
       "why": "cross-file semantic connection"
-    },
-    {
-      "source": "Splitzy Privacy Redirect",
-      "target": "Splitzy Privacy Policy",
-      "source_files": [
-        "splitzy/privacy.html",
-        "splitzy/privacy/index.html"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "references",
-      "why": "cross-file semantic connection"
-    },
-    {
-      "source": "deekte",
-      "target": "deekte Privacy Policy",
-      "source_files": [
-        "deekte/index.html",
-        "deekte/privacy/index.html"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "references",
-      "why": "cross-file semantic connection"
     }
   ],
   "tokens": {
-    "input": 351634,
-    "output": 1864
+    "input": 303401,
+    "output": 1737
   }
 }

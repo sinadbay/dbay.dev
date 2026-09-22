@@ -13,5 +13,20 @@
     "mtime": 1771805676.0785553,
     "ast_hash": "05f6d4a2df94dc17007e9ccc1ad40f36",
     "semantic_hash": "05f6d4a2df94dc17007e9ccc1ad40f36"
+  },
+  "/Users/sdbay/workspace/dbay.dev/.claude/settings.local.json": {
+    "mtime": 1783532324.072302,
+    "ast_hash": "e689e3a7b54c639d4823c92aacde9758",
+    "semantic_hash": "e689e3a7b54c639d4823c92aacde9758"
+  },
+  "/Users/sdbay/workspace/dbay.dev/halname/script.js": {
+    "mtime": 1783297838.7571316,
+    "ast_hash": "55a0657975ecdd463d1c6a63a77c24c5",
+    "semantic_hash": "55a0657975ecdd463d1c6a63a77c24c5"
+  },
+  "/Users/sdbay/workspace/dbay.dev/deekte/script.js": {
+    "mtime": 1780763279.231254,
+    "ast_hash": "8fc3293ed80e146034f60f91ed33977a",
+    "semantic_hash": "8fc3293ed80e146034f60f91ed33977a"
   }
 }

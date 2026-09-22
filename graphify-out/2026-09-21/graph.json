@@ -8,153 +8,153 @@
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L1",
+      "id": "script_js",
       "community": 0,
-      "norm_label": "script.js",
-      "id": "script_js"
+      "norm_label": "script.js"
     },
     {
       "label": "initLoader()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L20",
+      "id": "dbay_dev_script_initloader",
       "community": 0,
-      "norm_label": "initloader()",
-      "id": "dbay_dev_script_initloader"
+      "norm_label": "initloader()"
     },
     {
       "label": "initNavigation()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L31",
+      "id": "dbay_dev_script_initnavigation",
       "community": 0,
-      "norm_label": "initnavigation()",
-      "id": "dbay_dev_script_initnavigation"
+      "norm_label": "initnavigation()"
     },
     {
       "label": "initScrollAnimations()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L94",
+      "id": "dbay_dev_script_initscrollanimations",
       "community": 0,
-      "norm_label": "initscrollanimations()",
-      "id": "dbay_dev_script_initscrollanimations"
+      "norm_label": "initscrollanimations()"
     },
     {
       "label": "initParallaxOrbs()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L119",
+      "id": "dbay_dev_script_initparallaxorbs",
       "community": 0,
-      "norm_label": "initparallaxorbs()",
-      "id": "dbay_dev_script_initparallaxorbs"
+      "norm_label": "initparallaxorbs()"
     },
     {
       "label": "initMagneticEffects()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L164",
+      "id": "dbay_dev_script_initmagneticeffects",
       "community": 0,
-      "norm_label": "initmagneticeffects()",
-      "id": "dbay_dev_script_initmagneticeffects"
+      "norm_label": "initmagneticeffects()"
     },
     {
       "label": "initSmoothScroll()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L228",
+      "id": "dbay_dev_script_initsmoothscroll",
       "community": 0,
-      "norm_label": "initsmoothscroll()",
-      "id": "dbay_dev_script_initsmoothscroll"
+      "norm_label": "initsmoothscroll()"
     },
     {
       "label": "initCounterAnimation()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L252",
+      "id": "dbay_dev_script_initcounteranimation",
       "community": 0,
-      "norm_label": "initcounteranimation()",
-      "id": "dbay_dev_script_initcounteranimation"
+      "norm_label": "initcounteranimation()"
     },
     {
       "label": "animateCounter()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L280",
+      "id": "dbay_dev_script_animatecounter",
       "community": 0,
-      "norm_label": "animatecounter()",
-      "id": "dbay_dev_script_animatecounter"
+      "norm_label": "animatecounter()"
     },
     {
       "label": "initContactForm()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L303",
-      "community": 5,
-      "norm_label": "initcontactform()",
-      "id": "dbay_dev_script_initcontactform"
+      "id": "dbay_dev_script_initcontactform",
+      "community": 3,
+      "norm_label": "initcontactform()"
     },
     {
       "label": "isValidEmail()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L351",
-      "community": 5,
-      "norm_label": "isvalidemail()",
-      "id": "dbay_dev_script_isvalidemail"
+      "id": "dbay_dev_script_isvalidemail",
+      "community": 3,
+      "norm_label": "isvalidemail()"
     },
     {
       "label": "showNotification()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L355",
-      "community": 5,
-      "norm_label": "shownotification()",
-      "id": "dbay_dev_script_shownotification"
+      "id": "dbay_dev_script_shownotification",
+      "community": 3,
+      "norm_label": "shownotification()"
     },
     {
       "label": "initCursorGlow()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L399",
+      "id": "dbay_dev_script_initcursorglow",
       "community": 0,
-      "norm_label": "initcursorglow()",
-      "id": "dbay_dev_script_initcursorglow"
+      "norm_label": "initcursorglow()"
     },
     {
       "label": "throttle()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L445",
+      "id": "dbay_dev_script_throttle",
       "community": 0,
-      "norm_label": "throttle()",
-      "id": "dbay_dev_script_throttle"
+      "norm_label": "throttle()"
     },
     {
       "label": "debounce()",
       "file_type": "code",
       "source_file": "script.js",
       "source_location": "L456",
+      "id": "dbay_dev_script_debounce",
       "community": 0,
-      "norm_label": "debounce()",
-      "id": "dbay_dev_script_debounce"
+      "norm_label": "debounce()"
     },
     {
       "label": "script.js",
       "file_type": "code",
       "source_file": "joybeam/script.js",
       "source_location": "L1",
-      "community": 8,
-      "norm_label": "script.js",
-      "id": "joybeam_script_js"
+      "id": "joybeam_script_js",
+      "community": 4,
+      "norm_label": "script.js"
     },
     {
       "label": "script.js",
       "file_type": "code",
       "source_file": "splitzy/script.js",
       "source_location": "L1",
-      "community": 9,
-      "norm_label": "script.js",
-      "id": "splitzy_script_js"
+      "id": "splitzy_script_js",
+      "community": 5,
+      "norm_label": "script.js"
     },
     {
       "label": "Dbaydev LLC",
@@ -165,9 +165,9 @@
       "captured_at": null,
       "author": "Dbaydev LLC",
       "contributor": null,
+      "id": "index_dbaydev_llc",
       "community": 2,
-      "norm_label": "dbaydev llc",
-      "id": "index_dbaydev_llc"
+      "norm_label": "dbaydev llc"
     },
     {
       "label": "Splitzy",
@@ -178,9 +178,9 @@
       "captured_at": null,
       "author": "Dbaydev LLC",
       "contributor": null,
+      "id": "index_splitzy",
       "community": 2,
-      "norm_label": "splitzy",
-      "id": "index_splitzy"
+      "norm_label": "splitzy"
     },
     {
       "label": "Baziihub",
@@ -191,9 +191,9 @@
       "captured_at": null,
       "author": "Dbaydev LLC",
       "contributor": null,
+      "id": "index_baziihub",
       "community": 2,
-      "norm_label": "baziihub",
-      "id": "index_baziihub"
+      "norm_label": "baziihub"
     },
     {
       "label": "JoyBeam",
@@ -204,9 +204,9 @@
       "captured_at": null,
       "author": "Dbaydev LLC",
       "contributor": null,
+      "id": "index_joybeam",
       "community": 2,
-      "norm_label": "joybeam",
-      "id": "index_joybeam"
+      "norm_label": "joybeam"
     },
     {
       "label": "JoyBeam App",
@@ -217,9 +217,9 @@
       "captured_at": null,
       "author": "Dbaydev LLC",
       "contributor": null,
+      "id": "joybeam_index_joybeam_app",
       "community": 2,
-      "norm_label": "joybeam app",
-      "id": "joybeam_index_joybeam_app"
+      "norm_label": "joybeam app"
     },
     {
       "label": "JoyBeam Privacy Policy",
@@ -230,9 +230,9 @@
       "captured_at": null,
       "author": "Dbaydev LLC",
       "contributor": null,
+      "id": "joybeam_privacy_joybeam_privacy_policy",
       "community": 2,
-      "norm_label": "joybeam privacy policy",
-      "id": "joybeam_privacy_joybeam_privacy_policy"
+      "norm_label": "joybeam privacy policy"
     },
     {
       "label": "Splitzy",
@@ -243,9 +243,9 @@
       "captured_at": null,
       "author": "Dbaydev LLC",
       "contributor": null,
+      "id": "splitzy_index_html_splitzy",
       "community": 1,
-      "norm_label": "splitzy",
-      "id": "splitzy_index_html_splitzy"
+      "norm_label": "splitzy"
     },
     {
       "label": "React Native",
@@ -256,9 +256,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "splitzy_index_html_react_native",
       "community": 1,
-      "norm_label": "react native",
-      "id": "splitzy_index_html_react_native"
+      "norm_label": "react native"
     },
     {
       "label": "Expo",
@@ -269,9 +269,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "splitzy_index_html_expo",
       "community": 1,
-      "norm_label": "expo",
-      "id": "splitzy_index_html_expo"
+      "norm_label": "expo"
     },
     {
       "label": "TypeScript",
@@ -282,9 +282,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "splitzy_index_html_typescript",
       "community": 1,
-      "norm_label": "typescript",
-      "id": "splitzy_index_html_typescript"
+      "norm_label": "typescript"
     },
     {
       "label": "Supabase",
@@ -295,9 +295,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "splitzy_index_html_supabase",
       "community": 1,
-      "norm_label": "supabase",
-      "id": "splitzy_index_html_supabase"
+      "norm_label": "supabase"
     },
     {
       "label": "PostgreSQL",
@@ -308,9 +308,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "splitzy_index_html_postgresql",
       "community": 1,
-      "norm_label": "postgresql",
-      "id": "splitzy_index_html_postgresql"
+      "norm_label": "postgresql"
     },
     {
       "label": "Row Level Security",
@@ -321,9 +321,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "splitzy_index_html_row_level_security",
       "community": 1,
-      "norm_label": "row level security",
-      "id": "splitzy_index_html_row_level_security"
+      "norm_label": "row level security"
     },
     {
       "label": "React Query",
@@ -334,9 +334,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "splitzy_index_html_react_query",
       "community": 1,
-      "norm_label": "react query",
-      "id": "splitzy_index_html_react_query"
+      "norm_label": "react query"
     },
     {
       "label": "Zod",
@@ -347,275 +347,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
+      "id": "splitzy_index_html_zod",
       "community": 1,
-      "norm_label": "zod",
-      "id": "splitzy_index_html_zod"
-    },
-    {
-      "label": "settings.local.json",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L1",
-      "id": "claude_settings_local_json",
-      "community": 4,
-      "norm_label": "settings.local.json"
-    },
-    {
-      "label": "permissions",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L2",
-      "id": "claude_settings_local_permissions",
-      "community": 4,
-      "norm_label": "permissions"
-    },
-    {
-      "label": "allow",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L3",
-      "id": "claude_settings_local_permissions_allow",
-      "community": 4,
-      "norm_label": "allow"
-    },
-    {
-      "label": "script.js",
-      "file_type": "code",
-      "source_file": "halname/script.js",
-      "source_location": "L1",
-      "id": "halname_script_js",
-      "community": 10,
-      "norm_label": "script.js"
-    },
-    {
-      "label": "script.js",
-      "file_type": "code",
-      "source_file": "deekte/script.js",
-      "source_location": "L1",
-      "id": "deekte_script_js",
-      "community": 11,
-      "norm_label": "script.js"
-    },
-    {
-      "label": "Splitzy Index HTML",
-      "file_type": "document",
-      "source_file": "splitzy/index.html",
-      "source_location": null,
-      "source_url": "https://dbay.dev/splitzy/",
-      "captured_at": null,
-      "author": "Dbaydev LLC",
-      "contributor": null,
-      "id": "splitzy_indexhtml",
-      "community": 12,
-      "norm_label": "splitzy index html"
-    },
-    {
-      "label": "Splitzy Privacy Policy",
-      "file_type": "document",
-      "source_file": "splitzy/privacy/index.html",
-      "source_location": null,
-      "source_url": "https://dbay.dev/splitzy/privacy/",
-      "captured_at": null,
-      "author": "Dbaydev LLC",
-      "contributor": null,
-      "id": "splitzy_privacyindexhtml",
-      "community": 7,
-      "norm_label": "splitzy privacy policy"
-    },
-    {
-      "label": "Splitzy Privacy Redirect",
-      "file_type": "document",
-      "source_file": "splitzy/privacy.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "splitzy_privacyhtml",
-      "community": 7,
-      "norm_label": "splitzy privacy redirect"
-    },
-    {
-      "label": "deekte",
-      "file_type": "concept",
-      "source_file": "deekte/index.html",
-      "source_location": null,
-      "source_url": "https://dbay.dev/deekte/",
-      "captured_at": null,
-      "author": "dbaydev LLC",
-      "contributor": null,
-      "id": "deekte_deekte",
-      "community": 6,
-      "norm_label": "deekte"
-    },
-    {
-      "label": "deekte Privacy Policy",
-      "file_type": "document",
-      "source_file": "deekte/privacy/index.html",
-      "source_location": null,
-      "source_url": "https://dbay.dev/deekte/privacy/",
-      "captured_at": null,
-      "author": "dbaydev LLC",
-      "contributor": null,
-      "id": "deekte_privacy_policy",
-      "community": 6,
-      "norm_label": "deekte privacy policy"
-    },
-    {
-      "label": "Deekte Static App Icon PNG",
-      "file_type": "image",
-      "source_file": "deekte/static/app-icon.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "deekte_static_app_icon_png",
-      "community": 13,
-      "norm_label": "deekte static app icon png"
-    },
-    {
-      "label": "Halname Index HTML",
-      "file_type": "document",
-      "source_file": "halname/index.html",
-      "source_location": null,
-      "source_url": "https://dbay.dev/halname/",
-      "captured_at": null,
-      "author": "dbaydev LLC",
-      "contributor": null,
-      "id": "halname_index_html",
-      "community": 3,
-      "norm_label": "halname index html"
-    },
-    {
-      "label": "Halname Privacy HTML Redirect",
-      "file_type": "document",
-      "source_file": "halname/privacy.html",
-      "source_location": null,
-      "source_url": "https://dbay.dev/halname/privacy/",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "halname_privacy_html",
-      "community": 3,
-      "norm_label": "halname privacy html redirect"
-    },
-    {
-      "label": "Halname Privacy Policy",
-      "file_type": "document",
-      "source_file": "halname/privacy/index.html",
-      "source_location": null,
-      "source_url": "https://dbay.dev/halname/privacy/",
-      "captured_at": null,
-      "author": "dbaydev LLC",
-      "contributor": null,
-      "id": "halname_privacy_index_html",
-      "community": 3,
-      "norm_label": "halname privacy policy"
-    },
-    {
-      "label": "Halname Static App Icon PNG",
-      "file_type": "image",
-      "source_file": "halname/static/app-icon.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "halname_static_app_icon_png",
-      "community": 3,
-      "norm_label": "halname static app icon png"
-    },
-    {
-      "label": "JoyBeam Privacy HTML Redirect",
-      "file_type": "document",
-      "source_file": "joybeam/privacy.html",
-      "source_location": null,
-      "source_url": "https://dbay.dev/joybeam/privacy/",
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "joybeam_privacy_html",
-      "community": 14,
-      "norm_label": "joybeam privacy html redirect"
-    },
-    {
-      "label": "JoyBeam Static 4 PNG",
-      "file_type": "image",
-      "source_file": "joybeam/static/4.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "joybeam_static_4_png",
-      "community": 15,
-      "norm_label": "joybeam static 4 png"
-    },
-    {
-      "label": "JoyBeam Static 5 PNG",
-      "file_type": "image",
-      "source_file": "joybeam/static/5.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "joybeam_static_5_png",
-      "community": 16,
-      "norm_label": "joybeam static 5 png"
-    },
-    {
-      "label": "JoyBeam Static 7 PNG",
-      "file_type": "image",
-      "source_file": "joybeam/static/7.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "joybeam_static_7_png",
-      "community": 17,
-      "norm_label": "joybeam static 7 png"
-    },
-    {
-      "label": "JoyBeam Static 8 PNG",
-      "file_type": "image",
-      "source_file": "joybeam/static/8.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "joybeam_static_8_png",
-      "community": 18,
-      "norm_label": "joybeam static 8 png"
-    },
-    {
-      "label": "JoyBeam Static 9 PNG",
-      "file_type": "image",
-      "source_file": "joybeam/static/9.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "joybeam_static_9_png",
-      "community": 19,
-      "norm_label": "joybeam static 9 png"
-    },
-    {
-      "label": "JoyBeam Static App Icon PNG",
-      "file_type": "image",
-      "source_file": "joybeam/static/app-icon.png",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "joybeam_static_app_icon_png",
-      "community": 20,
-      "norm_label": "joybeam static app icon png"
+      "norm_label": "zod"
     }
   ],
   "links": [
@@ -625,9 +359,9 @@
       "source_file": "script.js",
       "source_location": "L20",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_initloader"
+      "target": "dbay_dev_script_initloader",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -635,9 +369,9 @@
       "source_file": "script.js",
       "source_location": "L31",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_initnavigation"
+      "target": "dbay_dev_script_initnavigation",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -645,9 +379,9 @@
       "source_file": "script.js",
       "source_location": "L94",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_initscrollanimations"
+      "target": "dbay_dev_script_initscrollanimations",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -655,9 +389,9 @@
       "source_file": "script.js",
       "source_location": "L119",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_initparallaxorbs"
+      "target": "dbay_dev_script_initparallaxorbs",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -665,9 +399,9 @@
       "source_file": "script.js",
       "source_location": "L164",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_initmagneticeffects"
+      "target": "dbay_dev_script_initmagneticeffects",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -675,9 +409,9 @@
       "source_file": "script.js",
       "source_location": "L228",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_initsmoothscroll"
+      "target": "dbay_dev_script_initsmoothscroll",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -685,9 +419,9 @@
       "source_file": "script.js",
       "source_location": "L252",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_initcounteranimation"
+      "target": "dbay_dev_script_initcounteranimation",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -695,9 +429,9 @@
       "source_file": "script.js",
       "source_location": "L280",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_animatecounter"
+      "target": "dbay_dev_script_animatecounter",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -705,9 +439,9 @@
       "source_file": "script.js",
       "source_location": "L303",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_initcontactform"
+      "target": "dbay_dev_script_initcontactform",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -715,9 +449,9 @@
       "source_file": "script.js",
       "source_location": "L351",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_isvalidemail"
+      "target": "dbay_dev_script_isvalidemail",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -725,9 +459,9 @@
       "source_file": "script.js",
       "source_location": "L355",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_shownotification"
+      "target": "dbay_dev_script_shownotification",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -735,9 +469,9 @@
       "source_file": "script.js",
       "source_location": "L399",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_initcursorglow"
+      "target": "dbay_dev_script_initcursorglow",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -745,9 +479,9 @@
       "source_file": "script.js",
       "source_location": "L445",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_throttle"
+      "target": "dbay_dev_script_throttle",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -755,9 +489,9 @@
       "source_file": "script.js",
       "source_location": "L456",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "script_js",
-      "target": "dbay_dev_script_debounce"
+      "target": "dbay_dev_script_debounce",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -766,9 +500,9 @@
       "source_file": "script.js",
       "source_location": "L316",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dbay_dev_script_initcontactform",
-      "target": "dbay_dev_script_shownotification"
+      "target": "dbay_dev_script_shownotification",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -777,9 +511,9 @@
       "source_file": "script.js",
       "source_location": "L320",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "dbay_dev_script_initcontactform",
-      "target": "dbay_dev_script_isvalidemail"
+      "target": "dbay_dev_script_isvalidemail",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -910,78 +644,8 @@
       "weight": 1.0,
       "source": "splitzy_index_html_splitzy",
       "target": "splitzy_index_html_zod"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "source": "claude_settings_local_json",
-      "target": "claude_settings_local_permissions",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "claude_settings_local_permissions",
-      "target": "claude_settings_local_permissions_allow",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "splitzy/privacy.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "splitzy_privacyhtml",
-      "target": "splitzy_privacyindexhtml"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "deekte/index.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "deekte_deekte",
-      "target": "deekte_privacy_policy"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "halname/index.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "halname_index_html",
-      "target": "halname_static_app_icon_png"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "halname/index.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "halname_index_html",
-      "target": "halname_privacy_index_html"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "halname/privacy.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "halname_privacy_html",
-      "target": "halname_privacy_index_html"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "30e5fd7c3fa596c5788e27f47361849ffb4bfb33"
+  "built_at_commit": "29fbd66a92e22510d5f80ffbd1c70558aca3ec63"
 }
