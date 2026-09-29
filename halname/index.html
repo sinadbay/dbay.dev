@@ -12,24 +12,24 @@
       gtag('config', 'G-568TEMVNPF');
     </script>
 
-    <title>Halname — a two-tap emotional ledger for iPhone and Android. Your year, in color.</title>
-    <meta name="description" content="Halname (حال‌نامه) is a private journal for iPhone and Android that takes two taps: green for a good moment, coral for a hard one, one line of text. Your calendar takes color as your year takes shape. Private by default, end-to-end encrypted sync.">
-    <meta name="keywords" content="Halname, حال‌نامه, mood journal, emotional ledger, mood tracker iOS, mood tracker Android, gratitude journal, daily journal iPhone, daily journal Android, year in review journal, private journal app">
+    <title>Halname — mood tracking and CBT thought records, in one private app</title>
+    <meta name="description" content="Halname (حال‌نامه) is a private journal with two modes: two-tap mood tracking that turns your year into color, and CBT thought records that help you catch a thought, name the thinking trap, and find a balanced one — with optional suggestions from Claude.">
+    <meta name="keywords" content="Halname, حال‌نامه, mood journal, mood tracker, CBT app, thought record, cognitive distortions, cognitive behavioral therapy journal, thought diary, reframing, private journal app, AI CBT">
     <meta name="author" content="dbaydev LLC">
     <link rel="canonical" href="https://dbay.dev/halname/">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://dbay.dev/halname/">
-    <meta property="og:title" content="Halname — a two-tap emotional ledger">
-    <meta property="og:description" content="Two taps a day. A year in color. Log good and hard moments in seconds; watch your calendar shift between coral and emerald.">
+    <meta property="og:title" content="Halname — track your moods, untangle your thoughts">
+    <meta property="og:description" content="Two-tap mood tracking that turns your year into color, and CBT thought records that help you reframe the thoughts behind hard days.">
     <meta property="og:image" content="https://dbay.dev/halname/static/app-icon.png">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Halname — a two-tap emotional ledger">
-    <meta property="twitter:description" content="Two taps a day. A year in color. A private journal for good and hard moments.">
+    <meta property="twitter:title" content="Halname — track your moods, untangle your thoughts">
+    <meta property="twitter:description" content="Mood tracking and CBT thought records in one private journal.">
     <meta property="twitter:image" content="https://dbay.dev/halname/static/app-icon.png">
 
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Halname","operatingSystem":"iOS, Android","applicationCategory":"LifestyleApplication","description":"A private two-tap emotional ledger for iPhone and Android. Log good and hard moments in seconds and watch your calendar take color across the year.","url":"https://dbay.dev/halname/","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+    {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Halname","operatingSystem":"iOS, Android","applicationCategory":"HealthApplication","description":"A private journal with two modes: two-tap mood tracking that turns your year into color, and CBT thought records with optional AI suggestions.","url":"https://dbay.dev/halname/","offers":[{"@type":"Offer","name":"Halname","price":"0","priceCurrency":"USD"},{"@type":"Offer","name":"Halname AI (monthly)","price":"4.99","priceCurrency":"USD"},{"@type":"Offer","name":"Halname AI (yearly)","price":"39.99","priceCurrency":"USD"}]}
     </script>
 
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -50,8 +50,9 @@
             <span>dbaydev</span>
         </a>
         <ul class="hn-nav-links">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#how">How it works</a></li>
+            <li><a href="#modes">Two modes</a></li>
+            <li><a href="#cbt">Thought records</a></li>
+            <li><a href="#what-is-cbt">What is CBT?</a></li>
             <li><a href="#privacy">Privacy</a></li>
             <li><a href="../">Home</a></li>
         </ul>
@@ -70,11 +71,11 @@
                             <span>By dbaydev LLC</span>
                         </div>
                         <h1 class="hn-hero-title">
-                            Two taps a day. <span>A year in color.</span>
+                            Track your moods. <span>Untangle your thoughts.</span>
                         </h1>
                         <p class="hn-hero-fa">حال‌نامه — دفترِ حالِ روزهای تو</p>
                         <p class="hn-hero-desc">
-                            Halname is a private emotional ledger for iPhone and Android. Tap green for a good moment, coral for a hard one, add a single line — done in seconds. Day by day, your calendar takes color.
+                            Halname is a private journal with two modes. <strong>Mood tracking</strong>: tap green for a good moment, coral for a hard one, and watch your year take color. <strong>Thought tracking</strong>: when a thought weighs on you, work through a CBT thought record — catch it, name the thinking trap, weigh the evidence, and find a kinder, truer way to see it.
                         </p>
                         <div class="hn-hero-actions">
                             <a href="https://apps.apple.com/us/app/halname/id6787802388" target="_blank" rel="noopener" class="hn-btn hn-btn-primary">
@@ -85,14 +86,15 @@
                                 <i class="fab fa-google-play"></i>
                                 Google Play
                             </a>
-                            <a href="#features" class="hn-btn hn-btn-secondary">
-                                See features
+                            <a href="#modes" class="hn-btn hn-btn-secondary">
+                                See how it works
                             </a>
                         </div>
                     </div>
-                    <div class="hn-hero-visual">
+                    <div class="hn-hero-visual hn-hero-phones">
                         <div class="hn-hero-glow"></div>
-                        <img src="static/app-icon.png" alt="Halname app icon" class="hn-hero-icon">
+                        <img src="static/screens/mood-home.webp" alt="Halname mood tracking: the screen split into a green 'Something good' half and a coral 'Something hard' half" class="hn-phone hn-phone-back" width="600" height="1304">
+                        <img src="static/screens/cbt-label.webp" alt="Halname thought record: Claude has spotted mind reading and fortune telling in the thought 'She must hate my work.'" class="hn-phone hn-phone-front" width="600" height="1304">
                     </div>
                 </div>
             </div>
@@ -100,17 +102,51 @@
 
         <section class="hn-section hn-intro" id="what">
             <p class="hn-section-tag">What is Halname</p>
-            <h2 class="hn-section-title">A ledger for how your days actually felt</h2>
+            <h2 class="hn-section-title">A ledger for how your days felt — and a tool for the thoughts behind them</h2>
             <p>
-                <strong>Halname</strong> (<span class="hn-fa">حال‌نامه</span>, "a chronicle of one's state") is built on a simple nightly habit: write down one good thing and one hard thing, and look back at the whole picture at the end of the year. Our memory has a negativity bias — bad days shout, good moments whisper. A ledger keeps both honestly.
+                <strong>Halname</strong> (<span class="hn-fa">حال‌نامه</span>, "a chronicle of one's state") started as a simple nightly habit: write down one good thing and one hard thing, and look back at the whole picture at the end of the year. Our memory has a negativity bias — bad days shout, good moments whisper. A ledger keeps both honestly.
             </p>
             <p>
-                No streaks, no scores to chase, no social feed. Just your moments, the color of your days, and a year-end review that tells the story you actually lived.
+                Some hard moments come with a thought that won't let go: <em>"They must think I'm useless." "I always mess this up."</em> For those, Halname has a second mode built on cognitive behavioral therapy, the same thought-record worksheet many CBT therapists use between sessions — redesigned to be calm, quick, and genuinely pleasant to fill in.
             </p>
         </section>
 
+        <section class="hn-section hn-modes" id="modes">
+            <p class="hn-section-tag">Two modes, one tap</p>
+            <h2 class="hn-section-title">Switch between them anytime</h2>
+            <p class="hn-section-subtitle">
+                A single Mood | CBT switch sits at the top of the app. Each mode has its own home, its own history, and its own colors — your data in both stays put.
+            </p>
+            <div class="hn-modes-grid">
+                <article class="hn-mode hn-mode-mood">
+                    <img src="static/screens/calendar.webp" alt="Halname calendar: each day colored from coral to emerald by the moments logged" class="hn-phone" width="600" height="1304" loading="lazy">
+                    <div>
+                        <p class="hn-mode-tag"><i class="fas fa-sun"></i> Mood tracking</p>
+                        <h3 class="hn-mode-title">Two taps a day. A year in color.</h3>
+                        <ul class="hn-mode-points">
+                            <li>Tap a half — good or hard — and write one line. Under ten seconds.</li>
+                            <li>Every day blends from coral to emerald. Patterns appear at a glance.</li>
+                            <li>Weekly, monthly and yearly reviews, plus a story-style replay of your year.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="hn-mode hn-mode-cbt">
+                    <img src="static/screens/cbt-home.webp" alt="Halname CBT mode home: 'What's on your mind?' with a Catch a thought card and the five steps of a thought record" class="hn-phone" width="600" height="1304" loading="lazy">
+                    <div>
+                        <p class="hn-mode-tag"><i class="fas fa-brain"></i> Thought tracking <span class="hn-new">New in 1.6 · iPhone</span></p>
+                        <h3 class="hn-mode-title">Catch the thought. Find a truer one.</h3>
+                        <ul class="hn-mode-points">
+                            <li>A guided CBT thought record, one calm question at a time.</li>
+                            <li>Twelve thinking traps, each explained with an example.</li>
+                            <li>A journal of every reframe, and patterns in the traps you fall into most.</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
         <section class="hn-section hn-steps" id="how">
-            <p class="hn-section-tag">How it works</p>
+            <p class="hn-section-tag">Mood tracking</p>
             <h2 class="hn-section-title">Ten seconds, start to saved</h2>
             <div class="hn-steps-grid">
                 <div class="hn-step">
@@ -129,13 +165,89 @@
                     <p class="hn-step-desc">Each day blends between coral and emerald based on what you logged. Weeks, months, and the year form a picture.</p>
                 </div>
             </div>
+            <div class="hn-gallery" role="list" aria-label="Mood tracking screenshots">
+                <figure role="listitem"><img src="static/screens/mood-home.webp" alt="Mood home: split screen for good and hard moments" class="hn-phone" width="600" height="1304" loading="lazy"><figcaption>Capture</figcaption></figure>
+                <figure role="listitem"><img src="static/screens/calendar.webp" alt="Calendar colored by daily mood" class="hn-phone" width="600" height="1304" loading="lazy"><figcaption>Calendar</figcaption></figure>
+                <figure role="listitem"><img src="static/screens/review.webp" alt="Monthly review with a positivity score and highlights" class="hn-phone" width="600" height="1304" loading="lazy"><figcaption>Review</figcaption></figure>
+            </div>
+        </section>
+
+        <section class="hn-section hn-cbt" id="cbt">
+            <p class="hn-section-tag">Thought tracking</p>
+            <h2 class="hn-section-title">A thought record, the way a CBT therapist would walk you through it</h2>
+            <p class="hn-section-subtitle">
+                Five short steps. Save after any of them and come back to finish later — often the reframe comes easier an hour after the thought.
+            </p>
+            <ol class="hn-cbt-steps">
+                <li><span class="hn-cbt-num">1</span><div><h3>Thought</h3><p>Write it exactly as it sounds in your head, plus what was happening.</p></div></li>
+                <li><span class="hn-cbt-num">2</span><div><h3>Feeling</h3><p>Pick the emotions that fit and rate how intense they are, 0–10.</p></div></li>
+                <li><span class="hn-cbt-num">3</span><div><h3>Label</h3><p>Name the thinking trap — mind reading, catastrophizing, all-or-nothing and nine more, each with an explanation.</p></div></li>
+                <li><span class="hn-cbt-num">4</span><div><h3>Evidence</h3><p>Weigh the evidence for the thought and against it, like a fair judge rather than a prosecutor.</p></div></li>
+                <li><span class="hn-cbt-num">5</span><div><h3>Reframe</h3><p>Write a balanced thought, then re-rate the feeling and see how much lighter it got.</p></div></li>
+            </ol>
+            <div class="hn-gallery" role="list" aria-label="Thought record screenshots">
+                <figure role="listitem"><img src="static/screens/cbt-label.webp" alt="Label step: Claude spotted mind reading and fortune telling, with a reason for each" class="hn-phone" width="600" height="1304" loading="lazy"><figcaption>Name the trap</figcaption></figure>
+                <figure role="listitem"><img src="static/screens/cbt-evidence.webp" alt="Evidence step: evidence for and against, with Claude's suggestions to add" class="hn-phone" width="600" height="1304" loading="lazy"><figcaption>Weigh the evidence</figcaption></figure>
+                <figure role="listitem"><img src="static/screens/cbt-reframe.webp" alt="Reframe step: two balanced thoughts suggested by Claude" class="hn-phone" width="600" height="1304" loading="lazy"><figcaption>Find a balanced thought</figcaption></figure>
+                <figure role="listitem"><img src="static/screens/cbt-journal.webp" alt="Journal of thought records with reframes, thinking traps and intensity before and after" class="hn-phone" width="600" height="1304" loading="lazy"><figcaption>Journal</figcaption></figure>
+                <figure role="listitem"><img src="static/screens/cbt-patterns.webp" alt="Patterns: thoughts caught, reframed, average intensity drop and most common thinking traps" class="hn-phone" width="600" height="1304" loading="lazy"><figcaption>Patterns</figcaption></figure>
+            </div>
+
+            <div class="hn-ai">
+                <div>
+                    <p class="hn-section-tag hn-tag-iris"><i class="fas fa-wand-magic-sparkles"></i> Halname AI — optional</p>
+                    <h3 class="hn-ai-title">A kinder second opinion, whenever a thought gets loud</h3>
+                    <p>
+                        Turn on Halname AI and <strong>Claude</strong>, by Anthropic, joins each step: it labels the thinking traps in your thought and says which words give them away, suggests evidence that doesn't fit, and offers balanced thoughts that are believable rather than forced-positive. Everything is a suggestion you can edit or ignore — and it answers in whatever language you write in.
+                    </p>
+                    <ul class="hn-mode-points">
+                        <li>Only the thought record you're working on is sent. Nothing is stored by Halname.</li>
+                        <li>If a thought sounds like a crisis, Halname shows helplines instead of suggestions.</li>
+                        <li>Thought records themselves, and mood tracking, are always free.</li>
+                    </ul>
+                </div>
+                <div class="hn-ai-price">
+                    <p class="hn-ai-trial">1 week free</p>
+                    <p class="hn-ai-amount">$4.99<span> / month</span></p>
+                    <p class="hn-ai-or">or <strong>$39.99 / year</strong> — save 33%</p>
+                    <p class="hn-ai-note">iPhone. Cancel before the trial ends and you won't be charged.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="hn-section hn-tldr" id="what-is-cbt">
+            <p class="hn-section-tag hn-tag-iris">What is CBT? The TL;DR</p>
+            <h2 class="hn-section-title">Thoughts, feelings and actions are connected — and thoughts can be tested</h2>
+            <ul class="hn-tldr-points">
+                <li><strong>What it is.</strong> Cognitive behavioral therapy (CBT) is a structured, present-focused talking therapy that helps you change unhelpful ways of thinking and acting.<sup><a href="#ref-nhs">[1]</a></sup></li>
+                <li><strong>The core idea.</strong> How you <em>interpret</em> a situation shapes how you feel about it more than the situation itself. Spot the interpretation, test it against the facts, and the feeling often softens.<sup><a href="#ref-beck">[2]</a></sup></li>
+                <li><strong>Where it came from.</strong> Psychiatrist Aaron T. Beck developed cognitive therapy in the 1960s–70s, first for depression.<sup><a href="#ref-beck-book">[3]</a></sup> David Burns later popularized the list of "cognitive distortions" — the thinking traps Halname helps you name.<sup><a href="#ref-burns">[4]</a></sup></li>
+                <li><strong>The thought record.</strong> Writing down the situation, the automatic thought, the emotion, the distortion, the evidence for and against, and a balanced thought is one of CBT's core homework tools.<sup><a href="#ref-padesky">[5]</a></sup><sup><a href="#ref-mindtrace">[6]</a></sup></li>
+                <li><strong>Does it work?</strong> CBT is one of the most studied psychotherapies. A review of 106 meta-analyses (from 269 identified) found strong evidence for it, with the strongest support for anxiety disorders, somatoform disorders, bulimia, anger control problems and general stress.<sup><a href="#ref-hofmann">[7]</a></sup> It's a recommended treatment for depression, anxiety, PTSD and more.<sup><a href="#ref-nhs">[1]</a></sup><sup><a href="#ref-apa">[8]</a></sup></li>
+                <li><strong>How it's usually done.</strong> A set number of sessions with a trained therapist — usually 5 to 15 on the NHS,<sup><a href="#ref-nhs">[1]</a></sup> or 12 to 16 as the APA describes it<sup><a href="#ref-apa">[8]</a></sup> — with practice in between. That practice is where a thought record helps most.</li>
+            </ul>
+            <p class="hn-tldr-note">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+                <span>Halname is a self-help journal. It isn't therapy, a diagnosis, or a medical device, and it doesn't replace a professional. It works best alongside a CBT therapist. If you're in crisis or thinking about harming yourself, contact your local emergency number or <a href="https://findahelpline.com" target="_blank" rel="noopener">find a helpline near you</a>.</span>
+            </p>
+            <h3 class="hn-refs-title">References</h3>
+            <ol class="hn-refs">
+                <li id="ref-nhs">NHS. <a href="https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/cognitive-behavioural-therapy-cbt/overview/" target="_blank" rel="noopener">Cognitive behavioural therapy (CBT)</a>.</li>
+                <li id="ref-beck">Beck Institute for Cognitive Behavior Therapy. <a href="https://beckinstitute.org/about/understanding-cbt/" target="_blank" rel="noopener">Understanding CBT</a>.</li>
+                <li id="ref-beck-book">Beck, A. T., Rush, A. J., Shaw, B. F., &amp; Emery, G. (1979). <em>Cognitive Therapy of Depression</em>. Guilford Press.</li>
+                <li id="ref-burns">Burns, D. D. (1980). <em>Feeling Good: The New Mood Therapy</em>. William Morrow.</li>
+                <li id="ref-padesky">Greenberger, D., &amp; Padesky, C. A. (2015). <em>Mind Over Mood: Change How You Feel by Changing the Way You Think</em> (2nd ed.). Guilford Press.</li>
+                <li id="ref-mindtrace">MindTrace. <a href="https://www.mindtrace.co/post/beginner-s-guide-to-cbt-thought-records-why-tracking-your-thoughts-matters" target="_blank" rel="noopener">Beginner's guide to CBT thought records</a>.</li>
+                <li id="ref-hofmann">Hofmann, S. G., Asnaani, A., Vonk, I. J. J., Sawyer, A. T., &amp; Fang, A. (2012). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3584580/" target="_blank" rel="noopener">The efficacy of cognitive behavioral therapy: A review of meta-analyses</a>. <em>Cognitive Therapy and Research, 36</em>(5), 427–440. doi:10.1007/s10608-012-9476-1</li>
+                <li id="ref-apa">American Psychological Association. <a href="https://www.apa.org/ptsd-guideline/treatments/cognitive-behavioral-therapy" target="_blank" rel="noopener">Cognitive behavioral therapy (CBT)</a>. Clinical Practice Guideline for the Treatment of PTSD.</li>
+            </ol>
         </section>
 
         <section class="hn-section hn-features" id="features">
             <p class="hn-section-tag">Features</p>
             <h2 class="hn-section-title">Small app, honest picture</h2>
             <p class="hn-section-subtitle">
-                Capture in seconds, review across a year — and keep every word private.
+                Capture in seconds, reframe when it matters, review across a year — and keep every word private.
             </p>
             <div class="hn-features-grid">
                 <div class="hn-feature-card">
@@ -149,29 +261,34 @@
                     <p class="hn-feature-desc">Every day is tinted along a coral-to-emerald gradient from your entries. Patterns appear at a glance.</p>
                 </div>
                 <div class="hn-feature-card">
+                    <div class="hn-feature-icon hn-icon-iris"><i class="fas fa-brain"></i></div>
+                    <h3 class="hn-feature-title">CBT thought records</h3>
+                    <p class="hn-feature-desc">Thought, feeling, label, evidence, reframe — one calm question at a time, with intensity before and after.</p>
+                </div>
+                <div class="hn-feature-card">
+                    <div class="hn-feature-icon hn-icon-iris"><i class="fas fa-wand-magic-sparkles"></i></div>
+                    <h3 class="hn-feature-title">Suggestions from Claude</h3>
+                    <p class="hn-feature-desc">Optional Halname AI names the thinking traps and suggests evidence and balanced thoughts. Always yours to edit.</p>
+                </div>
+                <div class="hn-feature-card">
                     <div class="hn-feature-icon"><i class="fas fa-chart-simple"></i></div>
-                    <h3 class="hn-feature-title">Year in review</h3>
-                    <p class="hn-feature-desc">Weekly, monthly, and yearly summaries — plus a story-style replay of your year's moments.</p>
+                    <h3 class="hn-feature-title">Reviews and patterns</h3>
+                    <p class="hn-feature-desc">Week, month and year summaries of your moods, and the thinking traps that show up most in your thoughts.</p>
                 </div>
                 <div class="hn-feature-card">
                     <div class="hn-feature-icon"><i class="fas fa-magnifying-glass"></i></div>
-                    <h3 class="hn-feature-title">Search your moments</h3>
-                    <p class="hn-feature-desc">Find that dinner, that phone call, that hard week — every note is searchable on your device.</p>
+                    <h3 class="hn-feature-title">Search everything</h3>
+                    <p class="hn-feature-desc">Find that dinner, that hard week, that reframe that helped — searched on your device.</p>
                 </div>
                 <div class="hn-feature-card">
                     <div class="hn-feature-icon"><i class="fas fa-bell"></i></div>
                     <h3 class="hn-feature-title">Gentle reminders</h3>
-                    <p class="hn-feature-desc">Set as many daily reminder times as you like. No streaks, no guilt — just a quiet nudge to write the day down.</p>
-                </div>
-                <div class="hn-feature-card">
-                    <div class="hn-feature-icon"><i class="fas fa-lock"></i></div>
-                    <h3 class="hn-feature-title">Private by default</h3>
-                    <p class="hn-feature-desc">Works fully without an account. Signed out, your entries never leave your phone and are encrypted at rest.</p>
+                    <p class="hn-feature-desc">Set as many daily reminder times as you like. No guilt — just a quiet nudge to write the day down.</p>
                 </div>
                 <div class="hn-feature-card">
                     <div class="hn-feature-icon"><i class="fas fa-cloud-arrow-up"></i></div>
                     <h3 class="hn-feature-title">Encrypted sync, if you want it</h3>
-                    <p class="hn-feature-desc">Sign in with Apple or Google to back up and sync. Notes are end-to-end encrypted before they leave your phone.</p>
+                    <p class="hn-feature-desc">Sign in with Apple or Google to back up and sync. Notes and thought records are end-to-end encrypted before they leave your phone.</p>
                 </div>
             </div>
         </section>
@@ -180,12 +297,17 @@
             <p class="hn-section-tag">Privacy</p>
             <h2 class="hn-section-title">Your feelings are nobody's business</h2>
             <p>
-                Halname works without an account: entries stay on your phone, protected by your device's own encryption. If you turn on sync, your notes are end-to-end encrypted on the device before upload — the key stays in your device's secure keychain, so not even we can read them.
+                Halname works without an account: your moods and thought records stay on your phone, protected by your device's own encryption. If you turn on sync, notes and entire thought records are end-to-end encrypted on the device before upload — the key stays in your iCloud Keychain, so not even we can read them.
+            </p>
+            <p>
+                Halname AI is off unless you subscribe. When it's on, only the thought record you're working on goes to Claude to generate suggestions — never the rest of your journal — and we don't store or log what you wrote.
             </p>
             <ul class="hn-privacy-points">
                 <li><i class="fas fa-check"></i> No account required</li>
                 <li><i class="fas fa-check"></i> On-device by default</li>
-                <li><i class="fas fa-check"></i> End-to-end encrypted notes in sync</li>
+                <li><i class="fas fa-check"></i> End-to-end encrypted sync</li>
+                <li><i class="fas fa-check"></i> AI only if you choose it</li>
+                <li><i class="fas fa-check"></i> Your words are never stored for AI</li>
                 <li><i class="fas fa-check"></i> No ads, data never sold</li>
             </ul>
             <p style="margin-top: 1.25rem;">
@@ -198,7 +320,7 @@
                 <p class="hn-section-tag">Download</p>
                 <h2 class="hn-section-title">Available on the App Store and Google Play</h2>
                 <p class="hn-section-subtitle">
-                    Halname is free, on iPhone (iOS 26 or later) and on Android.
+                    Halname is free on iPhone and Android. CBT thought records are new in version 1.6 for iPhone, with optional Halname AI from $4.99 a month after a free week.
                 </p>
                 <div class="hn-download-actions">
                     <a href="https://apps.apple.com/us/app/halname/id6787802388" target="_blank" rel="noopener" class="hn-btn hn-btn-primary">
@@ -223,7 +345,7 @@
         </div>
         <p class="hn-footer-copy">&copy; 2026 dbaydev LLC. All rights reserved.</p>
         <p class="hn-footer-disclaimer">
-            Halname and <span class="hn-fa">حال‌نامه</span> are products of dbaydev LLC. iOS and App Store are trademarks of Apple Inc. Android and Google Play are trademarks of Google LLC.
+            Halname and <span class="hn-fa">حال‌نامه</span> are products of dbaydev LLC. iOS and App Store are trademarks of Apple Inc. Android and Google Play are trademarks of Google LLC. Claude is a trademark of Anthropic PBC.
         </p>
     </footer>
 
