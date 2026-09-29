@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Halname Privacy Policy | dbaydev LLC</title>
-    <meta name="description" content="Halname Privacy Policy. Halname works without an account and keeps entries on your device by default; optional sync end-to-end encrypts your notes before they leave your phone.">
+    <meta name="description" content="Halname Privacy Policy. Halname works without an account and keeps your journal on your device by default; optional sync end-to-end encrypts it, and optional AI suggestions send only the thought you are working on.">
     <link rel="canonical" href="https://dbay.dev/halname/privacy/">
 
     <link rel="icon" type="image/png" href="/favicon.png">
@@ -36,90 +36,116 @@
     <main class="hn-section" style="padding-top: 5rem;">
         <article class="hn-privacy-doc">
             <h1>Halname Privacy Policy</h1>
-            <p class="meta"><strong>Effective Date:</strong> July 5, 2026 &nbsp;|&nbsp; <strong>Owner:</strong> dbaydev LLC</p>
+            <p class="meta"><strong>Effective Date:</strong> September 29, 2026 &nbsp;|&nbsp; <strong>Owner:</strong> dbaydev LLC</p>
 
             <p class="intro">
-                Halname (<span class="hn-fa">حال‌نامه</span>) is a personal journal for iPhone where you log good and hard moments of your day. It is <strong>private by default</strong>: the app works fully without an account, and your entries stay on your device unless you explicitly sign in to enable sync. This policy states, factually, what the app stores, where, and who can access it.
+                Halname (<span class="hn-fa">حال‌نامه</span>) is a personal journal for iPhone. In mood mode you log good and hard moments of your day; in CBT mode you work through cognitive-behavioral thought records. It is <strong>private by default</strong>: the app works fully without an account, and what you write stays on your device unless you explicitly sign in to enable sync, or turn on AI suggestions. This policy states, factually, what the app stores, where, and who can access it.
             </p>
 
             <h2>1. Using Halname without an account (the default)</h2>
             <ul>
-                <li><strong>Your entries</strong> — the date, whether the moment was good or hard, your one-line note, and the time it was saved — are stored in a database <strong>on your device only</strong>.</li>
-                <li>The local database is protected with <strong>iOS Data Protection</strong> (complete file protection): it is encrypted at rest with keys derived from your device passcode.</li>
+                <li><strong>Mood entries</strong> — the date, whether the moment was good or hard (or the mood you picked), your one-line note, any photo you attach, and the time it was saved — are stored <strong>on your device only</strong>.</li>
+                <li><strong>Thought records</strong> (CBT mode) — the situation, automatic thought, emotions and their intensity, the thinking patterns you label, your evidence for and against, and your balanced thought — are likewise stored <strong>on your device only</strong>.</li>
+                <li>This data is protected with <strong>iOS Data Protection</strong>: it is encrypted at rest with keys derived from your device passcode. Thought records and photos use the strictest level (complete protection).</li>
                 <li>Reminder times and app settings are likewise stored on the device.</li>
-                <li>In this mode, your entries are never transmitted to us or to anyone else.</li>
+                <li>In this mode, nothing you write is transmitted to us or to anyone else — unless you turn on AI suggestions (section 3).</li>
             </ul>
 
             <h2>2. Optional sign-in and sync</h2>
             <p>
-                You may sign in with <strong>Sign in with Apple</strong> or <strong>Google</strong> to back up your entries and sync them across your devices. Sign-in is never required to use the app. If you sign in:
+                You may sign in with <strong>Sign in with Apple</strong> or <strong>Google</strong> to back up your journal and sync it across your devices. Sign-in is never required to use the app. If you sign in:
             </p>
             <ul>
                 <li><strong>Account data we receive:</strong> a unique user identifier, and the name and email address your identity provider (Apple or Google) shares. Authentication is handled by <strong>Firebase Authentication</strong> (a Google service).</li>
-                <li><strong>Where entries are stored:</strong> in <strong>Google Cloud Firestore</strong>, in a private area tied to your account. Server-side security rules permit only your authenticated account to read or write your data.</li>
-                <li><strong>End-to-end encryption of notes:</strong> the text of every note is encrypted <strong>on your device</strong> with AES-256-GCM before upload. The encryption key is generated on your device and stored in your <strong>iCloud Keychain</strong>; it is never sent to us or to Google. Google's servers store only ciphertext — neither dbaydev LLC nor Google can read your notes.</li>
-                <li><strong>What is not end-to-end encrypted:</strong> the entry date, the good/hard flag, and timestamps are stored in ordinary (server-side encrypted) form, as they are needed to order and sync entries. They remain private to your account.</li>
-                <li><strong>A practical caveat:</strong> because only your devices hold the note key, losing access to your iCloud Keychain means your synced note text cannot be recovered by anyone, including us.</li>
+                <li><strong>Where your journal is stored:</strong> in <strong>Google Cloud Firestore</strong> (and, for photos, <strong>Google Cloud Storage</strong>), in a private area tied to your account. Server-side security rules permit only your authenticated account to read or write your data.</li>
+                <li><strong>End-to-end encryption:</strong> note text, photos, and <strong>entire thought records</strong> are encrypted <strong>on your device</strong> with AES-256-GCM before upload. The encryption key is generated on your device and stored in your <strong>iCloud Keychain</strong>; it is never sent to us or to Google. Google's servers store only ciphertext — neither dbaydev LLC nor Google can read them.</li>
+                <li><strong>What is not end-to-end encrypted:</strong> for mood entries, the date, the good/hard flag or mood, and timestamps; for thought records, only when each record was created and last edited; for photos, a random identifier and the image dimensions. These are needed to order and sync your data, and remain private to your account.</li>
+                <li><strong>A practical caveat:</strong> because only your devices hold the key, losing access to your iCloud Keychain means your synced notes, photos and thought records cannot be recovered by anyone, including us.</li>
                 <li>Signing out stops syncing; your local data remains on the device.</li>
             </ul>
 
-            <h2>3. Usage analytics</h2>
+            <h2>3. AI suggestions (optional)</h2>
             <p>
-                Halname records anonymized usage statistics through <strong>Google Analytics for Firebase</strong> so we can understand how many people use the app and which features matter. This includes counts of events such as: an entry was saved (only whether it was good or hard — <strong>never the note text</strong>), onboarding was completed, a reminder was added, and a sign-in was completed, along with standard device information collected by the SDK (such as device model, OS version, and app opens). We do not use advertising SDKs and do not track you across other apps or websites.
+                In CBT mode, Halname can suggest the thinking patterns in a thought, evidence against it, and balanced alternatives, using <strong>Claude</strong>, an AI model made by <strong>Anthropic PBC</strong>. This is <strong>off until you turn it on</strong>, and you can turn it off at any time in Settings.
+            </p>
+            <ul>
+                <li><strong>What is sent:</strong> only the thought record you are working on — its situation, automatic thought, and emotion words. Nothing else from your journal is sent: never your mood entries, notes, photos, other thought records, name, or email.</li>
+                <li><strong>How it travels:</strong> over TLS to a Halname service running on Google Cloud (Cloud Functions), which forwards it to Anthropic's API and returns the suggestions to your phone. Because Claude must read the text to respond, this text is not end-to-end encrypted while it is being processed.</li>
+                <li><strong>What we keep:</strong> nothing of what you wrote. Our service does not store or log the text you send or the suggestions it returns.</li>
+                <li><strong>Anthropic</strong> processes the text only to generate the response, under its commercial terms, which do not permit it to use this data to train its models. See <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's privacy policy</a>.</li>
+                <li><strong>Subscription check:</strong> AI suggestions require a Halname AI subscription (section 4). With each request the app sends Apple's signed record of your subscription, and our service asks Apple whether it is currently active.</li>
+                <li><strong>AI usage records:</strong> to apply a fair daily limit, control costs and prevent abuse, we record for each AI request: when it was made, whether it succeeded, the AI model used, the number of tokens processed, and how long it took; and, from Apple's subscription check, which plan you have, whether you are in the free trial, when the current period ends, and Apple's transaction identifier. These records are linked to a random identifier generated by the app (stored in your iCloud Keychain) and, if you are signed in, your account identifier. They <strong>never contain the text you wrote or the suggestions you received</strong>.</li>
+                <li><strong>App verification:</strong> requests are checked with <strong>Firebase App Check</strong> and Apple's <strong>App Attest</strong>, which confirm they come from a genuine copy of Halname. This does not identify you.</li>
+                <li>If a thought suggests you may be in crisis, the app shows links to crisis resources instead of suggestions. Halname is not a medical service and does not replace professional care.</li>
+            </ul>
+
+            <h2>4. Subscriptions</h2>
+            <ul>
+                <li>Mood tracking and thought records are free. AI suggestions are available with a <strong>Halname AI</strong> subscription purchased through Apple's In-App Purchase, which starts with a free trial; you are charged only if you don't cancel before the trial ends.</li>
+                <li><strong>Apple</strong> processes all payments. We never receive your payment details. We receive only Apple's signed record of your subscription (plan, dates, trial status and transaction identifiers), which we verify with Apple as described in section 3.</li>
+                <li>Manage or cancel your subscription in your App Store account settings.</li>
+            </ul>
+
+            <h2>5. Usage analytics</h2>
+            <p>
+                Halname records anonymized usage statistics through <strong>Google Analytics for Firebase</strong> so we can understand how many people use the app and which features matter. This includes counts of events such as: an entry was saved (only whether it was good or hard — <strong>never the note text</strong>), a thought record was saved (only whether it was new and whether it was reframed — <strong>never its content</strong>), the app mode was switched, onboarding was completed, a reminder was added, a sign-in was completed, the subscription screen was shown, and a subscription was purchased, along with standard device information collected by the SDK (such as device model, OS version, and app opens). We do not use advertising SDKs and do not track you across other apps or websites.
             </p>
 
-            <h2>4. Reminders and notifications</h2>
+            <h2>6. Reminders and notifications</h2>
             <p>
                 Daily reminders are <strong>local notifications</strong>, scheduled entirely on your device. No notification data is sent to any server.
             </p>
 
-            <h2>5. Ratings prompt</h2>
+            <h2>7. Ratings prompt</h2>
             <p>
                 Halname may occasionally show Apple's standard in-app rating prompt. This is handled by iOS; the app sends nothing to us.
             </p>
 
-            <h2>6. What Halname does NOT do</h2>
+            <h2>8. What Halname does NOT do</h2>
             <ul>
                 <li>No advertising and no advertising SDKs.</li>
                 <li>No selling or sharing of your data with third parties beyond the processors listed below.</li>
-                <li>No reading of your note content by us or by Google — synced notes are end-to-end encrypted.</li>
+                <li>No reading of your journal by us or by Google — synced notes, photos and thought records are end-to-end encrypted.</li>
+                <li>No storing or logging of the text you send for AI suggestions.</li>
                 <li>No location collection, no contact access, no cross-app tracking.</li>
             </ul>
 
-            <h2>7. Third-party processors</h2>
+            <h2>9. Third-party processors</h2>
             <ul>
-                <li><strong>Google LLC</strong> — Firebase Authentication (sign-in), Cloud Firestore (encrypted sync storage), and Google Analytics for Firebase (anonymized usage statistics). Servers located in the United States. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's privacy documentation</a>.</li>
-                <li><strong>Apple Inc.</strong> — App Store distribution, Sign in with Apple, iCloud Keychain (stores your note-encryption key), and the in-app rating system.</li>
+                <li><strong>Google LLC</strong> — Firebase Authentication (sign-in), Cloud Firestore (encrypted sync storage and AI usage records), Cloud Storage (encrypted photo backup), Cloud Functions (relaying AI requests), Firebase App Check (app verification), and Google Analytics for Firebase (anonymized usage statistics). Servers located in the United States. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's privacy documentation</a>.</li>
+                <li><strong>Anthropic PBC</strong> — the Claude API, which generates AI suggestions when you turn them on. See <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic's privacy policy</a>.</li>
+                <li><strong>Apple Inc.</strong> — App Store distribution, In-App Purchase and the App Store Server API (subscription status), Sign in with Apple, App Attest, iCloud Keychain (stores your encryption key and the app's random identifier), and the in-app rating system.</li>
             </ul>
 
-            <h2>8. Data retention &amp; deletion</h2>
+            <h2>10. Data retention &amp; deletion</h2>
             <ul>
-                <li><strong>Entries:</strong> deleting an entry in the app removes it from your device and, if you are signed in, from the synced copy in Firestore.</li>
+                <li><strong>Entries and thought records:</strong> deleting one in the app removes it from your device and, if you are signed in, from the synced copy.</li>
                 <li><strong>Local data:</strong> deleting the app removes all locally stored data.</li>
-                <li><strong>Account:</strong> to delete your account and all synced data, email <a href="mailto:dev@dbay.dev">dev@dbay.dev</a> from the address linked to your account and we will remove it.</li>
+                <li><strong>Account:</strong> you can delete your account in the app (Settings → Delete account). This permanently removes your account, your synced entries, thought records and photos, and unlinks your AI usage records from your account. You can also email <a href="mailto:dev@dbay.dev">dev@dbay.dev</a> from the address linked to your account.</li>
+                <li><strong>AI usage records</strong> are kept to operate subscriptions, daily limits and cost control; after account deletion they remain linked only to the app's random identifier. To have them deleted, email <a href="mailto:dev@dbay.dev">dev@dbay.dev</a>.</li>
             </ul>
 
-            <h2>9. Children</h2>
+            <h2>11. Children</h2>
             <p>
                 Halname is not directed to children under 13 and does not knowingly collect data from them.
             </p>
 
-            <h2>10. Security</h2>
+            <h2>12. Security</h2>
             <p>
-                All network traffic uses TLS encryption. Local data is encrypted at rest by iOS Data Protection. Synced note text is additionally end-to-end encrypted with a key held only in your iCloud Keychain.
+                All network traffic uses TLS encryption. Local data is encrypted at rest by iOS Data Protection. Synced notes, photos and thought records are additionally end-to-end encrypted with a key held only in your iCloud Keychain. The AI service's credentials are held in Google Cloud Secret Manager and never shipped in the app.
             </p>
 
-            <h2>11. Changes to this policy</h2>
+            <h2>13. Changes to this policy</h2>
             <p>
                 We may update this policy from time to time. When we do, we will revise the effective date above accordingly.
             </p>
 
-            <h2>12. Contact</h2>
+            <h2>14. Contact</h2>
             <p>
                 Halname is owned and operated by <strong>dbaydev LLC</strong>, 30 N Gould St, Sheridan, WY 82801-6317, United States. For privacy questions or data requests, contact <a href="mailto:dev@dbay.dev">dev@dbay.dev</a>.
             </p>
 
-            <p class="last-updated">Last Updated: July 5, 2026</p>
+            <p class="last-updated">Last Updated: September 29, 2026</p>
         </article>
     </main>
 
