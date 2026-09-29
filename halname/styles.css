@@ -1127,3 +1127,148 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .hn-feature-card, .hn-plan { opacity: 1; transform: none; transition: none; }
 }
+
+.hn-ai-why {
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--hn-border);
+  font-size: 0.92rem;
+}
+
+/* Can't afford it */
+.hn-afford {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  margin-top: 1.25rem;
+  padding: 1.5rem;
+  border-radius: var(--hn-radius);
+  background: var(--hn-emerald-pale);
+  border: 1px solid var(--hn-emerald-pale-2);
+}
+
+.hn-afford-icon {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  background: var(--hn-emerald-pale-2);
+  color: var(--hn-emerald-soft);
+}
+
+.hn-afford-title {
+  font-family: var(--hn-font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.4rem;
+}
+
+.hn-afford p {
+  color: var(--hn-text-muted);
+  font-size: 0.98rem;
+}
+
+.hn-afford strong { color: var(--hn-text); }
+
+.hn-afford a {
+  color: var(--hn-emerald-soft);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hn-afford a:hover { text-decoration: underline; }
+
+/* Language toggle, and the group it shares with the menu button */
+.hn-nav-end {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hn-lang {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--hn-border);
+  background: var(--hn-bg-card);
+  color: var(--hn-text);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.hn-lang[lang="fa"] { font-family: var(--hn-font-fa); }
+.hn-lang[lang="en"] { font-family: 'DM Sans', sans-serif; }
+.hn-lang:hover { border-color: var(--hn-emerald-pale-2); color: var(--hn-emerald); }
+.hn-lang-footer[lang="fa"] { font-family: var(--hn-font-fa); }
+
+@media (max-width: 768px) {
+  .hn-nav-end { gap: 0.75rem; }
+}
+
+/* Keeps prices and addresses left-to-right inside Persian text */
+.hn-ltr { direction: ltr; unicode-bidi: isolate; display: inline-block; }
+
+/* ---------- Persian (RTL) ---------- */
+html[dir="rtl"] {
+  --hn-font: 'Vazirmatn', 'DM Sans', sans-serif;
+  --hn-font-display: 'Vazirmatn', 'Fraunces', serif;
+}
+
+html[dir="rtl"] body { line-height: 1.85; }
+
+/* Letter-spacing breaks the joins in Persian script. */
+html[dir="rtl"] body * { letter-spacing: 0 !important; }
+
+/* Vazirmatn has no italics; a synthetic slant looks broken. */
+html[dir="rtl"] .hn-hero-title span,
+html[dir="rtl"] em { font-style: normal; }
+
+html[dir="rtl"] .hn-hero-title,
+html[dir="rtl"] .hn-section-title { line-height: 1.45; font-weight: 700; }
+
+html[dir="rtl"] .hn-hero-fa { direction: rtl; }
+
+html[dir="rtl"] .hn-mode-points li,
+html[dir="rtl"] .hn-tldr-points li,
+html[dir="rtl"] .hn-privacy-points li,
+html[dir="rtl"] .hn-plan-features li {
+  padding-left: 0;
+  padding-right: 1.3rem;
+}
+
+html[dir="rtl"] .hn-privacy-points li { padding-right: 1.6rem; }
+
+html[dir="rtl"] .hn-mode-points li::before,
+html[dir="rtl"] .hn-tldr-points li::before,
+html[dir="rtl"] .hn-plan-features li::before,
+html[dir="rtl"] .hn-privacy-points li i {
+  left: auto;
+  right: 0;
+}
+
+/* The references stay English and left-to-right. */
+html[dir="rtl"] .hn-refs {
+  font-family: 'DM Sans', sans-serif;
+  text-align: left;
+  line-height: 1.65;
+}
+
+html[dir="rtl"] .hn-phone-back { transform: translate(38%, -4%) rotate(7deg); }
+html[dir="rtl"] .hn-phone-front { transform: translate(-34%, 6%) rotate(-5deg); }
+
+/* The amount itself stays big; only the "/ month" label is small. */
+.hn-ai-amount .hn-ltr {
+  font-family: var(--hn-font-display);
+  font-size: inherit;
+  font-weight: inherit;
+  color: var(--hn-text);
+}
+html[dir="rtl"] .hn-ai-amount .hn-ltr { font-family: 'Fraunces', serif; }
